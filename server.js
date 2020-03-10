@@ -4,7 +4,7 @@ require('dotenv').config();
 
 //Application Dependencies
 const express = require('express');
-const pg = require('pg')
+const pg = require('pg');
 
 //Application Setup
 const app = express();
@@ -18,12 +18,35 @@ client.on('error', err => console.error('ya done goofed', err));
 //Application Middleware
 app.use(express.urlencoded({ extended:true }));
 
+//Set view enginge for server-side templating
+app.set('view engine', 'ejs');
+
 //Static Routes
 app.use(express.static('public'));
 
 //Routes
+app.get('/getMemos', getMemos);
+
 app.get('/days', (request, response) => {
   response.send('The days grow longer');
-})
+});
 
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
+const exampleMemos = ['walk dog', 'kill cat', 'eat sheeple', 'fly like an eagle', 'climb like a bear'];
+
+//Helper Functions
+function getMemos(request, response) {
+ 
+  let SQL = 'SELECT * FROM memos;';
+
+  return client.query(SQL)
+    .then(results => {
+      console.log('results.rows: ', results.rows);
+      response.render('pages/show', { memos: exampleMemos});
+    })
+    .catch(err => console.log('ya done goofed: ', err));
+}
+
+client.connect()
+  .then(() => {
+    app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
+  });
