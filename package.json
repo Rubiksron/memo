@@ -1,0 +1,31 @@
+{
+  "name": "memo",
+  "version": "1.0.0",
+  "description": "todo list",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "superagent": "^5.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rubiksron/memo.git"
+  },
+  "keywords": [
+    "key",
+    "words"
+  ],
+  "author": "ron dunphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rubiksron/memo/issues"
+  },
+  "homepage": "https://github.com/Rubiksron/memo#readme"
+}
