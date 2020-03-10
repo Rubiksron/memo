@@ -25,13 +25,12 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 //Routes
-app.get('/getMemos', getMemos);
+app.get('/', getMemos);
 
 app.get('/days', (request, response) => {
   response.send('The days grow longer');
 });
 
-const exampleMemos = ['walk dog', 'kill cat', 'eat sheeple', 'fly like an eagle', 'climb like a bear'];
 
 //Helper Functions
 function getMemos(request, response) {
@@ -41,7 +40,7 @@ function getMemos(request, response) {
   return client.query(SQL)
     .then(results => {
       console.log('results.rows: ', results.rows);
-      response.render('pages/show', { memos: exampleMemos});
+      response.render('pages/show', { memos: results.rows});
     })
     .catch(err => console.log('ya done goofed: ', err));
 }

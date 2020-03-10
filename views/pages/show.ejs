@@ -8,7 +8,9 @@
 <body>
   <h1>Memos:</h1>
   <ul>
-   Hello and welcome to show.ejs...
+    <% memos.forEach((memo) => { %>
+      <li><%= memo.memo %></li>
+   <% }) %>
   </ul>
 </body>
 </html>
