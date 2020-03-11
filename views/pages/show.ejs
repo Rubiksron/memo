@@ -6,11 +6,17 @@
   <title>Document</title>
 </head>
 <body>
+  <%- include('./addMemo')%>
   <h1>Memos:</h1>
   <ul>
     <% memos.forEach((memo) => { %>
-      <li><%= memo.memo %></li>
+      <form action="/delete" method="post">
+        <li><%= memo.id %> - <%= memo.memo %> <button type="submit">delete</button></li>
+      </form>
    <% }) %>
   </ul>
+  <form action="/delete" method="delete">
+    <button type="submit">delete</button>
+  </form>
 </body>
 </html>

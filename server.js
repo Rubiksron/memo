@@ -12,11 +12,7 @@ const PORT = process.env.PORT || 3001;
 
 //Database Setup
 const client = new pg.Client(process.env.DATABASE_URL);
-
 client.on('error', err => console.error('ya done goofed', err));
-
-//Application Middleware
-app.use(express.urlencoded({ extended:true }));
 
 //Set view enginge for server-side templating
 app.set('view engine', 'ejs');
@@ -24,17 +20,30 @@ app.set('view engine', 'ejs');
 //Static Routes
 app.use(express.static('public'));
 
+//Application Middleware
+app.use(express.urlencoded({ extended:true }));
+
 //Routes
 app.get('/', getMemos);
-
-app.get('/days', (request, response) => {
-  response.send('The days grow longer');
-});
-
+app.post('/createMemo', createMemo);
+app.get('/delete', deleteMemo);
 
 //Helper Functions
+function createMemo(request, response) {
+
+  let memo = request.body.memo;
+  const value = memo;
+  const SQL =   'INSERT INTO memos(memo) VALUES($1) RETURNING id;';
+
+  let VALUES = [value];
+  client.query(SQL, VALUES)
+    .then(() => response.redirect('/'))
+    .catch(error => console.error('ya done goofed',error));
+}
+
+
 function getMemos(request, response) {
- 
+
   let SQL = 'SELECT * FROM memos;';
 
   return client.query(SQL)
@@ -45,7 +54,13 @@ function getMemos(request, response) {
     .catch(err => console.log('ya done goofed: ', err));
 }
 
+function deleteMemo(request, response) {
+  console.log('delete !!');
+}
+
 client.connect()
   .then(() => {
     app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
   });
+
+
