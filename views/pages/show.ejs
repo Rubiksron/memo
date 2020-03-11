@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/css/show.css">
+
 </head>
 <body>
   <%- include('./addMemo')%>
   <h1>Memos:</h1>
   <ul>
     <% memos.forEach((memo) => { %>
-      <form action="/delete" method="post">
+      <form action="/delete" method="post" name="delete">
         <li><%= memo.id %> - <%= memo.memo %> <button type="submit">delete</button></li>
       </form>
    <% }) %>
   </ul>
-  <form action="/delete" method="delete">
-    <button type="submit">delete</button>
-  </form>
 </body>
 </html>
