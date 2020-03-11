@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 
 //Database Setup
 const client = new pg.Client(process.env.DATABASE_URL);
-client.on('error', err => console.error('ya done goofed', err));
+client.on('err: ', err => console.error('ya done goofed', err));
 
 //Set view enginge for server-side templating
 app.set('view engine', 'ejs');
@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended:true }));
 //Routes
 app.get('/', getMemos);
 app.post('/createMemo', createMemo);
-app.get('/delete', deleteMemo);
+app.post('/delete', deleteMemo);
 
 //Helper Functions
 function createMemo(request, response) {
@@ -38,7 +38,7 @@ function createMemo(request, response) {
   let VALUES = [value];
   client.query(SQL, VALUES)
     .then(() => response.redirect('/'))
-    .catch(error => console.error('ya done goofed',error));
+    .catch(err => console.err('ya done goofed',err));
 }
 
 
@@ -48,7 +48,7 @@ function getMemos(request, response) {
 
   return client.query(SQL)
     .then(results => {
-      console.log('results.rows: ', results.rows);
+      console.log('results.rows getMemos: ', results.rows);
       response.render('pages/show', { memos: results.rows});
     })
     .catch(err => console.log('ya done goofed: ', err));
@@ -56,6 +56,17 @@ function getMemos(request, response) {
 
 function deleteMemo(request, response) {
   console.log('delete !!');
+  console.log('request.body', request.body);
+  console.log('request.params', request.params);
+  console.log('request.query', request.query);
+
+  // const SQL = `DELETE FROM memos WHERE id=${id}`;
+  // const VALUES = [id]
+  // client.query(SQL, VALUES)
+  //   .then(results => {
+  //     console.log('results.rows deleteMemo: ', results.rows);
+  //   })
+  //   .catch(err => console.log('ya done goofed: ', err));
 }
 
 client.connect()
