@@ -9,12 +9,11 @@ h1 {
   text-align: center;
 }
 #memos {
-  box-shadow: 3px 3px 10px lightgreen;
-  width: 50%;
+  box-shadow: 5px 5px 30px lightgreen;
+  width: 70%;
   margin: auto;
   color: white;
   border-radius: .25rem;
-  border: .25rem solid lightgreen;
   padding: .25rem;
 }
 form {
