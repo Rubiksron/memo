@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/index.css">
-
+  <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
   <%- include('./pages/addMemo')%>
-  <h1 id="memos">Memos:</h1>
+  <h1 id="memos">🐻 Memos 🐻</h1>
   <ul>
     <% memos.forEach((memo) => { %>
       <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
@@ -17,5 +17,6 @@
       </form>
    <% }) %>
   </ul>
+  <%- include('./partials/footer') %>
 </body>
 </html>
