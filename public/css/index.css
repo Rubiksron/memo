@@ -1,30 +1,52 @@
 body {
   background-color: lightgrey;
 }
+body {
+  font-size: 1rem;
+}
 h1, form {
   text-align: center;
+}
+#memos {
+  box-shadow: 3px 3px 10px #444;
+  width: 50%;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: .25rem;
+}
+form {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+fieldset {
+  border-radius: .25rem;
 }
 li {
   background-color: white;
   list-style-type: none;
-  padding: .25rem;
-  margin: 2rem auto;
+  margin: auto;
   text-align: center;
   border-radius: .25rem;
   border-color: grey;
   margin-right: 1.5rem;
-  padding: 1rem;
+  padding: .5rem;
+  font-size: 1.5rem;
+  box-shadow: 3px 3px 10px #444;
 }
-button{
+button {
   border-radius: .25rem;
   float: right;
   border-color: black;
+  font-size: 1rem;
 }
-button.delete{
+button.delete {
   border-radius: .25rem;
   border-color: red;
   float: right;
+  font-size: 1rem;
 }
-input, form {
+input {
   border-radius: .25rem;
+  line-height: 7vw;
+  font-size: 1.5rem;
 }
