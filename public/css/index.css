@@ -26,9 +26,14 @@ fieldset {
   background-position: center;
   border-radius: .25rem;
   border-color: lightgreen;
-  width: 50%;
+  width: 80%;
   margin: auto;
+  padding: 1.25rem;
   box-shadow: 3px 3px 10px lightgreen;
+}
+ul {
+  overflow: scroll;
+  height: 40rem;
 }
 li {
   background-color: white;
@@ -36,7 +41,7 @@ li {
   margin: auto;
   text-align: center;
   border-radius: .25rem;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   padding: .5rem;
   font-size: 1.5rem;
   box-shadow: 4px 4px 10px lightgreen;
@@ -69,6 +74,7 @@ button.delete {
   width: 45%;
 }
 input {
+  /* margin-top: 1rem; */
   border-radius: .25rem;
   line-height: 7vw;
   font-size: 1.5rem;
