@@ -29,7 +29,7 @@ app.use(methodOverride('_method'));
 app.get('/', getMemos);
 app.post('/createMemo', createMemo);
 app.delete('/delete/:id', deleteMemo);
-app.get('*', (request, response) => response.status(404).send('This Route Does Not Exist, What Are You Doing With Your Life?'));
+app.get('*', (request, response) => response.status(404).send('This Route Does Not Exist'));
 
 //Helper Functions
 function createMemo(request, response) {
