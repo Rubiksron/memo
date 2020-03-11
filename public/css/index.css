@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey;
+  background-image: linear-gradient(to bottom, grey, white, grey);
 }
 body {
   font-size: 1rem;
@@ -20,6 +20,8 @@ form {
 }
 fieldset {
   border-radius: .25rem;
+  background-color: whitesmoke;
+
 }
 li {
   background-color: white;
@@ -43,6 +45,7 @@ button.delete {
   border-color: red;
   float: right;
   font-size: 1rem;
+  background-color: white; 
 }
 input {
   border-radius: .25rem;
