@@ -5,6 +5,7 @@ require('dotenv').config();
 //Application Dependencies
 const express = require('express');
 const pg = require('pg');
+const methodOverride = require('method-override');
 
 //Application Setup
 const app = express();
@@ -22,17 +23,18 @@ app.use(express.static('public'));
 
 //Application Middleware
 app.use(express.urlencoded({ extended:true }));
+app.use(methodOverride('_method'));
 
 //Routes
 app.get('/', getMemos);
 app.post('/createMemo', createMemo);
-app.post('/delete', deleteMemo);
+app.delete('/delete/:id', deleteMemo);
 app.get('*', (request, response) => response.status(404).send('This Route Does Not Exist, What Are You Doing With Your Life?'));
 
 //Helper Functions
 function createMemo(request, response) {
-
   let memo = request.body.memo;
+  
   const value = memo;
   const SQL =   'INSERT INTO memos(memo) VALUES($1) RETURNING id;';
   let VALUES = [value];
@@ -44,7 +46,6 @@ function createMemo(request, response) {
 
 
 function getMemos(request, response) {
-
   let SQL = 'SELECT * FROM memos;';
 
   return client.query(SQL)
@@ -56,19 +57,14 @@ function getMemos(request, response) {
 }
 
 function deleteMemo(request, response) {
-  console.log('delete !!');
-  console.log('response==============+++++++++++++++:', response);
-  console.log('request.body: ', request.body);
-  console.log('request.params: ', request.params);
-  console.log('request.query : ', request.query);
-  response.redirect('/');
-  // const SQL = `DELETE FROM memos WHERE id=${id}`;
-  // const VALUES = [id]
-  // client.query(SQL, VALUES)
-  //   .then(results => {
-  //     console.log('results.rows deleteMemo: ', results.rows);
-  //   })
-  //   .catch(err => console.log('ya done goofed: ', err));
+  let id = request.params.id;
+
+  const SQL = 'DELETE FROM memos WHERE id=$1;';
+  const VALUES = [id];
+
+  client.query(SQL, VALUES)
+    .then(() => response.redirect('/'))
+    .catch(err => console.log('ya done goofed: ', err));
 }
 
 client.connect()
