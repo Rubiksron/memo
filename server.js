@@ -46,7 +46,7 @@ function createMemo(request, response) {
 
 
 function getMemos(request, response) {
-  let SQL = 'SELECT * FROM memos;';
+  let SQL = 'SELECT * FROM memos ORDER BY id DESC;';
 
   return client.query(SQL)
     .then(results => {
