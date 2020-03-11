@@ -1,27 +1,36 @@
 body {
-  background-image: linear-gradient(to bottom, grey, white, grey);
-}
-body {
+  background-image: url("./images/stars.jpg");
   font-size: 1rem;
+  overflow: scroll;
+  /* background-position: center; */
 }
-h1, form {
+
+h1 {
   text-align: center;
 }
 #memos {
-  box-shadow: 3px 3px 10px #444;
+  box-shadow: 3px 3px 10px lightgreen;
   width: 50%;
   margin: auto;
-  background-color: whitesmoke;
+  color: white;
   border-radius: .25rem;
+  border: .25rem solid lightgreen;
 }
 form {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 fieldset {
+  background-image: linear-gradient(to right,darkgreen, green , darkgreen);
+  /* background-image: url("./images/pattern.jpg"); */
+  background-position: center;
   border-radius: .25rem;
-  background-color: whitesmoke;
-
+  border-color: lightgreen;
+  background-color: red;
+  width: 50%;
+  margin: auto;
+  box-shadow: 3px 3px 10px lightgreen;
 }
 li {
   background-color: white;
@@ -29,11 +38,12 @@ li {
   margin: auto;
   text-align: center;
   border-radius: .25rem;
-  border-color: grey;
   margin-right: 1.5rem;
   padding: .5rem;
   font-size: 1.5rem;
-  box-shadow: 3px 3px 10px #444;
+  box-shadow: 4px 4px 10px lightgreen;
+  overflow: scroll;
+  border: solid lightgreen;
 }
 button {
   border-radius: .25rem;
@@ -43,9 +53,22 @@ button {
 button.delete {
   border-radius: .25rem;
   border-color: red;
+  color: red;
+  background-color:white;
   float: right;
   font-size: 1rem;
-  background-color: white; 
+  box-shadow: 1px 1px 2px darkred;
+}
+#add {
+  border-radius: .25rem;
+  border-color: black;
+  color: white;
+  background-image: linear-gradient(to right, lightgreen, green, lightgreen);
+
+  /* background-color: lightgreen; */
+  font-size: 1.25rem;
+  margin-top: .5rem;
+  width: 45%;
 }
 input {
   border-radius: .25rem;

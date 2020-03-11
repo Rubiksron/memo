@@ -50,7 +50,7 @@ function getMemos(request, response) {
 
   return client.query(SQL)
     .then(results => {
-      console.log('results.rows getMemos: ', results.rows);
+      // console.log('results.rows getMemos: ', results.rows);
       response.render('./index', { memos: results.rows});
     })
     .catch(err => console.log('ya done goofed: ', err));
