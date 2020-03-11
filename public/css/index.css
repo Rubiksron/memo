@@ -1,0 +1,28 @@
+body {
+  background-color: lightgrey;
+}
+h1, form {
+  text-align: center;
+}
+li {
+  background-color: white;
+  list-style-type: none;
+  padding: .25rem;
+  margin: 1em auto;
+  text-align: center;
+  border-radius: .25rem;
+  border-color: grey;
+}
+button{
+  border-radius: .25rem;
+  float: right;
+  border-color: black;
+}
+button.delete{
+  border-radius: .25rem;
+  border-color: red;
+  float: right;
+}
+input, form {
+  border-radius: .25rem;
+}
