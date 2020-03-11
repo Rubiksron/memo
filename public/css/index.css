@@ -2,7 +2,7 @@ body {
   background-image: url("./images/stars.jpg");
   font-size: 1rem;
   overflow: scroll;
-  /* background-position: center; */
+  font-family: cursive;
 }
 
 h1 {
@@ -36,10 +36,11 @@ ul {
   height: 40rem;
 }
 li {
-  background-color: white;
+  background-image: linear-gradient(to right,white, rgb(214, 247, 247));
   list-style-type: none;
   margin: auto;
   text-align: center;
+  font-family: cursive;
   border-radius: .25rem;
   margin-right: 2rem;
   padding: .5rem;
@@ -47,6 +48,7 @@ li {
   box-shadow: 4px 4px 10px lightgreen;
   overflow: scroll;
   border: solid lightgreen;
+  color: darkblue;
 }
 button {
   border-radius: .25rem;
@@ -61,6 +63,7 @@ button.delete {
   float: right;
   font-size: 1rem;
   box-shadow: 1px 1px 2px darkred;
+  font-family: cursive;
 }
 #add {
   border-radius: .25rem;
@@ -72,11 +75,12 @@ button.delete {
   font-size: 1.25rem;
   margin-top: .5rem;
   width: 45%;
+  font-family: cursive;
 }
 input {
-  /* margin-top: 1rem; */
   border-radius: .25rem;
   line-height: 7vw;
   font-size: 1.5rem;
   padding: .25em;
+  font-family: cursive;
 }
