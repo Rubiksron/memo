@@ -70,8 +70,8 @@ button.delete {
   box-shadow: 3px 3px 10px darkgreen;
   background-color: lightgreen;
   margin-top: .5rem;
-  width: 45%;
   font-family: italic;
+  height: 2rem;
 }
 input {
   border-radius: .25rem;
