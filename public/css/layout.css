@@ -24,6 +24,11 @@
   padding: 0;
   font-size: 2rem;
 }  
+#hamburgerButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 #choreBear {
   font-size: 2rem;
   color: white;
@@ -49,6 +54,11 @@
   box-shadow: 1px 1px 4px darkred;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1rem;
+}
+#deleteButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 #bearHQ {
   color: rgb(238, 3, 238);
