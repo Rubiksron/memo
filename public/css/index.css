@@ -47,22 +47,23 @@ li {
   padding: .5rem;
   box-shadow: 4px 4px 10px lightgreen;
   overflow: scroll;
-  border: solid lightgreen;
+  border: ridge lightgreen;
   color: darkblue;
 }
 button {
   border-radius: .25rem;
-  border-color: black;
+  border:ridge black;
 }
 button.delete {
   border-radius: .25rem;
-  border-color: red;
-  color: red;
+  border: ridge red;
+  color: darkred;
   background-color:white;
   float: right;
-  box-shadow: 1px 1px 2px darkred;
-  font-family: italic;
+  box-shadow: 1px 1px 4px darkred;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   height: 2em;
+  background-color: white;
 }
 #add {
   border-radius: .25rem;
@@ -82,4 +83,5 @@ input {
   padding: .25em;
   font-family: italic;
   width: 80%;
+  border: ridge lightgreen;
 }
