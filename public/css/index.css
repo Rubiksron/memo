@@ -105,3 +105,24 @@ input {
   border-radius: .25rem;
   padding: .25rem;
 }
+
+
+@media only screen and (min-width: 700px) {
+  li {
+    font-size: 4rem;
+    width: 70%;
+    margin: auto;
+  }
+  #choreBear {
+    font-size: 4rem;
+  }
+  fieldset {
+    height: 75vh;
+  }
+  #hamburgerButton {
+    font-size: 5rem;
+  }
+  button.delete {
+    font-size: 2rem;
+  }
+}
