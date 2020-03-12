@@ -10,7 +10,9 @@ form {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
- 
+}
+h3 {
+  color: white;
 }
 fieldset {
   background-image: url("./images/polar-bear.jpg");

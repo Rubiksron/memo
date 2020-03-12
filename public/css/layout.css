@@ -50,6 +50,9 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1rem;
 }
+#bearHQ {
+  color: rgb(238, 3, 238);
+}
 
 @media only screen and (min-width: 700px) {
   li {
