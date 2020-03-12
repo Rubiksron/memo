@@ -1,15 +1,38 @@
 body {
-  background-image: url("./images/organic-mandala.jpg");
+  background-image: url("./images/forest.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border: ridge white;
-  text-align: center; 
+  background-position: center;
+  /* background-color: lightblue; */
+  height: 100vh;
 }
-#homeLink {
-  color: white;
-  font-size: 3rem;
+div {
+  background-image: url("./images/chorebear.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 90vw;
+  height: 100vw;
+  padding: .5rem;
+  margin: auto;
+  box-shadow: 5px 5px 30px white;
+  border: ridge white;
 }
 h1 {
   color: white;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 4rem;
+}
+#homeLink {
+  color: purple;
+  font-size: 5rem;
+  text-align: center;
+  padding: .5rem;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  border:ridge white;
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px 30px white;
 }
