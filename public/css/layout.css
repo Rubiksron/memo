@@ -1,0 +1,72 @@
+#add {
+  border-radius: .25rem;
+  border-color: lightgreen;
+  color: white;
+  box-shadow: 3px 3px 10px darkgreen;
+  background-color: green;
+  margin-top: .5rem;
+  font-family: italic;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  width: 50%;
+}
+#ulMemos {
+  overflow: scroll;
+  height: 30rem;
+  color: white;
+}
+#hamburgerButton {
+  width: 13%;
+  position: fixed;
+  margin-right: 0px;
+  top: .25rem;
+  right: .25rem;
+  padding: 0;
+  font-size: 2.25rem;
+}  
+#choreBear {
+  font-size: 2rem;
+  color: white;
+  font-family: cursive;
+  width: 70%;
+  margin: auto;
+  border-radius: .25rem;
+}
+#memos {
+  box-shadow: 5px 5px 30px lightgreen;
+  width: 70%;
+  margin: auto;
+  color: white;
+  border-radius: .25rem;
+  padding: .25rem;
+}
+#deleteButton {
+  border-radius: .25rem;
+  border: ridge red;
+  color: white;
+  background-color:red;
+  float: right;
+  box-shadow: 1px 1px 4px darkred;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  li {
+    font-size: 4rem;
+    width: 70%;
+    margin: auto;
+  }
+  #choreBear {
+    font-size: 4rem;
+  }
+  fieldset {
+    height: 75vh;
+  }
+  #hamburgerButton {
+    font-size: 5rem;
+  }
+  button.delete {
+    font-size: 2rem;
+  }
+}
