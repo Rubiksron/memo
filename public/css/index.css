@@ -10,7 +10,6 @@ body {
   font-family: cursive;
   width: 70%;
   margin: auto;
-  /* box-shadow: 5px 5px 30px lightgreen; */
   border-radius: .25rem;
 }
 h1 {
@@ -34,8 +33,6 @@ fieldset {
   background-image: url("./images/polar-bear.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-image: linear-gradient(to right,black, darkgreen, 
-  green , darkgreen, black); */
   background-position: center;
   border-radius: .25rem;
   border-color: lightgreen;
@@ -45,10 +42,19 @@ fieldset {
   padding: 1.25rem;
   box-shadow: 3px 3px 10px lightgreen;
 }
-ul {
+#ulMemos {
   overflow: scroll;
-  height: 40rem;
+  height: 30rem;
+  color: white;
 }
+#dropdownButton {
+  width: 10%;
+  position: absolute;
+  margin-right: 0px;
+  top: .5rem;
+  right: .5rem;
+  padding: 0px;
+}                             
 li {
   background-image: linear-gradient(to right,white, rgb(214, 247, 247));
   list-style-type: none;
@@ -83,7 +89,6 @@ button.delete {
   border-radius: .25rem;
   border-color: lightgreen;
   color: white;
-  /* background-image: linear-gradient(to right, lightgreen, green, black, green, lightgreen); */
   box-shadow: 3px 3px 10px darkgreen;
   background-color: green;
   margin-top: .5rem;
