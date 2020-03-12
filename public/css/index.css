@@ -44,7 +44,6 @@ li {
   border-radius: .25rem;
   margin-right: 2rem;
   padding: .5rem;
-  font-size: 1.25rem;
   box-shadow: 4px 4px 10px lightgreen;
   overflow: scroll;
   border: solid lightgreen;
@@ -53,7 +52,6 @@ li {
 button {
   border-radius: .25rem;
   border-color: black;
-  font-size: 1rem;
 }
 button.delete {
   border-radius: .25rem;
@@ -61,7 +59,6 @@ button.delete {
   color: red;
   background-color:white;
   float: right;
-  font-size: 1rem;
   box-shadow: 1px 1px 2px darkred;
   font-family: fantasy;
 }
@@ -72,7 +69,6 @@ button.delete {
   background-image: linear-gradient(to right, lightgreen, green, black, green, lightgreen);
   box-shadow: 3px 3px 10px darkgreen;
   background-color: lightgreen;
-  font-size: 1.25rem;
   margin-top: .5rem;
   width: 45%;
   font-family: fantasy;
