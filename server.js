@@ -67,6 +67,7 @@ function deleteMemo(request, response) {
     .catch(err => console.log('ya done goofed: ', err));
 }
 
+//Next build out an update function
 client.connect()
   .then(() => {
     app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
