@@ -1,7 +1,7 @@
 <ul>
   <% memos.forEach((memo) => { %>
     <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-      <li><%= memo.memo%><button type="submit" class="delete">delete</button></li>
+      <li><%= memo.memo%><button type="submit" class="delete">X</button></li>
     </form>
  <% }) %>
 </ul>

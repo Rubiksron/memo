@@ -2,14 +2,14 @@ body {
   background-image: url("./images/stars.jpg");
   font-size: 1rem;
   overflow: scroll;
-  font-family: cursive;
+  font-family: fantasy;
 }
 
 h1 {
   text-align: center;
 }
 #memos {
-  box-shadow: 5px 5px 30px lightgreen;
+  box-shadow: 5px 5px 50px lightgreen;
   width: 70%;
   margin: auto;
   color: white;
@@ -34,20 +34,23 @@ fieldset {
 ul {
   overflow: scroll;
   height: 40rem;
+  border: .1rem;
+  width: 80%;
+  margin: 1rem;
 }
 li {
   background-image: linear-gradient(to right,white, rgb(214, 247, 247));
   list-style-type: none;
   margin: auto;
   text-align: center;
-  font-family: cursive;
+  font-family: fantasy;
   border-radius: .25rem;
   margin-right: 2rem;
-  padding: .5rem;
+  padding: .75rem;
   font-size: 1.5rem;
   box-shadow: 4px 4px 10px lightgreen;
   overflow: scroll;
-  border: solid lightgreen;
+  border: ridge lightgreen;
   color: darkblue;
 }
 button {
@@ -57,13 +60,13 @@ button {
 }
 button.delete {
   border-radius: .25rem;
-  border-color: red;
+  border:ridge red;
   color: red;
   background-color:white;
   float: right;
   font-size: 1rem;
-  box-shadow: 1px 1px 2px darkred;
-  font-family: cursive;
+  box-shadow: 2px 2px 5px darkred;
+  font-family: fantasy;
 }
 #add {
   border-radius: .25rem;
@@ -75,12 +78,13 @@ button.delete {
   font-size: 1.25rem;
   margin-top: .5rem;
   width: 45%;
-  font-family: cursive;
+  font-family: fantasy;
 }
 input {
   border-radius: .25rem;
   line-height: 7vw;
   font-size: 1.5rem;
-  padding: .25em;
-  font-family: cursive;
+  padding: .5em;
+  font-family: fantasy;
+  border: ridge lightgreen;
 }
