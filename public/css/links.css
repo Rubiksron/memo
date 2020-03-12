@@ -1,8 +1,15 @@
 body {
-  background-image: url("./images/chorebear.png");
+  background-image: url("./images/organic-mandala.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border: ridge white;
+  text-align: center; 
 }
 #homeLink {
-  color: purple;
+  color: white;
+  font-size: 3rem;
+}
+h1 {
+  color: white;
+  font-size: 3rem;
 }
