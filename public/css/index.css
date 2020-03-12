@@ -79,8 +79,7 @@ button.delete {
 }
 input {
   border-radius: .25rem;
-  line-height: 7vw;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: .25em;
   font-family: fantasy;
 }
