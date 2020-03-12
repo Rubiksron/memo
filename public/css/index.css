@@ -2,7 +2,7 @@ body {
   background-image: url("./images/stars.jpg");
   font-size: 1rem;
   overflow: scroll;
-  font-family: fantasy;
+  font-family: italic;
 }
 
 h1 {
@@ -40,7 +40,7 @@ li {
   list-style-type: none;
   margin: auto;
   text-align: center;
-  font-family: fantasy;
+  font-family: italic;
   border-radius: .25rem;
   margin-right: 2rem;
   padding: .5rem;
@@ -60,7 +60,7 @@ button.delete {
   background-color:white;
   float: right;
   box-shadow: 1px 1px 2px darkred;
-  font-family: fantasy;
+  font-family: italic;
 }
 #add {
   border-radius: .25rem;
@@ -71,11 +71,11 @@ button.delete {
   background-color: lightgreen;
   margin-top: .5rem;
   width: 45%;
-  font-family: fantasy;
+  font-family: italic;
 }
 input {
   border-radius: .25rem;
   font-size: 1rem;
   padding: .25em;
-  font-family: fantasy;
+  font-family: italic;
 }
