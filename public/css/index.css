@@ -2,26 +2,9 @@ body {
   background-image: url("./images/stars.jpg");
   font-size: 1rem;
   overflow: scroll;
-  font-family: italic;
-}
-#choreBear {
-  font-size: 2rem;
-  color: white;
-  font-family: cursive;
-  width: 70%;
-  margin: auto;
-  border-radius: .25rem;
 }
 h1 {
   text-align: center;
-}
-#memos {
-  box-shadow: 5px 5px 30px lightgreen;
-  width: 70%;
-  margin: auto;
-  color: white;
-  border-radius: .25rem;
-  padding: .25rem;
 }
 form {
   margin-top: 2rem;
@@ -41,20 +24,7 @@ fieldset {
   margin: auto;
   padding: 1.25rem;
   box-shadow: 3px 3px 10px lightgreen;
-}
-#ulMemos {
-  overflow: scroll;
-  height: 30rem;
-  color: white;
-}
-#dropdownButton {
-  width: 10%;
-  position: absolute;
-  margin-right: 0px;
-  top: .5rem;
-  right: .5rem;
-  padding: 0px;
-}                             
+}                           
 li {
   background-image: linear-gradient(to right,white, rgb(214, 247, 247));
   list-style-type: none;
@@ -85,6 +55,14 @@ button.delete {
   height: 2em;
   background-color: white;
 }
+input {
+  border-radius: .25rem;
+  font-size: 1.5rem;
+  padding: .25em;
+  font-family: italic;
+  width: 90%;
+  border: ridge lightgreen;
+}
 #add {
   border-radius: .25rem;
   border-color: lightgreen;
@@ -94,14 +72,35 @@ button.delete {
   margin-top: .5rem;
   font-family: italic;
   height: 2.5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   width: 50%;
 }
-input {
+#ulMemos {
+  overflow: scroll;
+  height: 30rem;
+  color: white;
+}
+#dropdownButton {
+  width: 10%;
+  position: absolute;
+  margin-right: 0px;
+  top: .5rem;
+  right: .5rem;
+  padding: 0px;
+}  
+#choreBear {
+  font-size: 2rem;
+  color: white;
+  font-family: cursive;
+  width: 70%;
+  margin: auto;
   border-radius: .25rem;
-  font-size: 1.5rem;
-  padding: .25em;
-  font-family: italic;
-  width: 90%;
-  border: ridge lightgreen;
+}
+#memos {
+  box-shadow: 5px 5px 30px lightgreen;
+  width: 70%;
+  margin: auto;
+  color: white;
+  border-radius: .25rem;
+  padding: .25rem;
 }
