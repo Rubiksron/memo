@@ -73,6 +73,7 @@ button.delete {
   margin-top: .5rem;
   font-family: italic;
   height: 2rem;
+  font-size: 1rem;
 }
 input {
   border-radius: .25rem;
