@@ -9,7 +9,7 @@ h1 {
   text-align: center;
 }
 #memos {
-  box-shadow: 5px 5px 50px lightgreen;
+  box-shadow: 5px 5px 30px lightgreen;
   width: 70%;
   margin: auto;
   color: white;
@@ -34,9 +34,6 @@ fieldset {
 ul {
   overflow: scroll;
   height: 40rem;
-  border: .1rem;
-  width: 80%;
-  margin: 1rem;
 }
 li {
   background-image: linear-gradient(to right,white, rgb(214, 247, 247));
@@ -46,11 +43,11 @@ li {
   font-family: fantasy;
   border-radius: .25rem;
   margin-right: 2rem;
-  padding: .75rem;
-  font-size: 1.5rem;
+  padding: .5rem;
+  font-size: 1.25rem;
   box-shadow: 4px 4px 10px lightgreen;
   overflow: scroll;
-  border: ridge lightgreen;
+  border: solid lightgreen;
   color: darkblue;
 }
 button {
@@ -60,12 +57,12 @@ button {
 }
 button.delete {
   border-radius: .25rem;
-  border:ridge red;
+  border-color: red;
   color: red;
   background-color:white;
   float: right;
   font-size: 1rem;
-  box-shadow: 2px 2px 5px darkred;
+  box-shadow: 1px 1px 2px darkred;
   font-family: fantasy;
 }
 #add {
@@ -84,7 +81,6 @@ input {
   border-radius: .25rem;
   line-height: 7vw;
   font-size: 1.5rem;
-  padding: .5em;
+  padding: .25em;
   font-family: fantasy;
-  border: ridge lightgreen;
 }
