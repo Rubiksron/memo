@@ -27,11 +27,17 @@ app.use(methodOverride('_method'));
 
 //Routes
 app.get('/', getMemos);
+app.get('/hamburger', hamburger);
 app.post('/createMemo', createMemo);
 app.delete('/delete/:id', deleteMemo);
 app.get('*', (request, response) => response.status(404).send('This Route Does Not Exist'));
 
 //Helper Functions
+function hamburger(request, response) {
+  response.render('./pages/links');
+}
+
+
 function createMemo(request, response) {
   let memo = request.body.memo;
   
@@ -56,6 +62,7 @@ function getMemos(request, response) {
     .catch(err => console.log('ya done goofed: ', err));
 }
 
+
 function deleteMemo(request, response) {
   let id = request.params.id;
 
@@ -67,7 +74,7 @@ function deleteMemo(request, response) {
     .catch(err => console.log('ya done goofed: ', err));
 }
 
-//Next build out an update function
+
 client.connect()
   .then(() => {
     app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
