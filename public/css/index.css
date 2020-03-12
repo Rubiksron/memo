@@ -35,7 +35,7 @@ li {
   border-radius: .25rem;
   margin-right: 2rem;
   padding: .5rem;
-  box-shadow: 4px 4px 10px lightgreen;
+  box-shadow: 3px 3px 10px lightgreen;
   overflow: scroll;
   border: ridge lightgreen;
   color: darkblue;
@@ -60,7 +60,7 @@ input {
   font-size: 1.5rem;
   padding: .25em;
   font-family: italic;
-  width: 90%;
+  width: 80%;
   border: ridge lightgreen;
 }
 #add {
@@ -80,13 +80,14 @@ input {
   height: 30rem;
   color: white;
 }
-#dropdownButton {
+#hamburgerButton {
   width: 10%;
-  position: absolute;
+  position: fixed;
   margin-right: 0px;
-  top: .5rem;
-  right: .5rem;
-  padding: 0px;
+  top: .25rem;
+  right: .25rem;
+  padding: 0;
+  font-size: 1.5rem;
 }  
 #choreBear {
   font-size: 2rem;
