@@ -22,7 +22,7 @@
   top: .25rem;
   right: .25rem;
   padding: 0;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }  
 #choreBear {
   font-size: 2rem;
@@ -48,7 +48,7 @@
   float: right;
   box-shadow: 1px 1px 4px darkred;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 #bearHQ {
   color: rgb(238, 3, 238);
