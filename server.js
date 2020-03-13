@@ -27,23 +27,64 @@ app.use(methodOverride('_method'));
 
 //Routes
 app.get('/', getMemos);
-app.get('/hamburger', hamburger);
+app.get('/groceries', getGroceries);
+app.get('/pharmacy', getPharmacy);
+app.get('/hardware', getHardware);
 app.post('/createMemo', createMemo);
 app.delete('/delete/:id', deleteMemo);
 app.get('*', (request, response) => response.status(404).send('This Route Does Not Exist'));
 
 //Helper Functions
-function hamburger(request, response) {
-  response.render('./pages/links');
+function getHardware(request, response) {
+  console.log('inside the getHardware function');
+  // The below is a doubled effort since I'm also filter in the EJS file that renders each chore_type!
+  let SQL = 'select * from memos WHERE chore_type=\'hardware\';';
+
+  client.query(SQL)
+    .then(results => {
+      // console.log('results.rows get hardware: ', results.rows);
+      response.render('./pages/hardware', { memos: results.rows});
+    })
+    .catch(err => console.log('ya done goofed: ', err));
+}
+
+
+
+function getPharmacy(request, response) {
+  console.log('inside the getPharmacy function');
+
+  let SQL = 'select * from memos WHERE chore_type=\'pharmacy\';';
+
+  client.query(SQL)
+    .then(results => {
+      console.log('results.rows getMemos: ', results.rows);
+      response.render('./pages/pharmacy', { memos: results.rows});
+    })
+    .catch(err => console.log('ya done goofed: ', err));
+}
+
+
+function getGroceries(request, response) {
+  console.log('inside the getGroceries function');
+
+  let SQL = 'select * from memos WHERE chore_type=\'groceries\';';
+
+  client.query(SQL)
+    .then(results => {
+      console.log('results.rows getMemos: ', results.rows);
+      response.render('./pages/groceries', { memos: results.rows});
+    })
+    .catch(err => console.log('ya done goofed: ', err));
 }
 
 
 function createMemo(request, response) {
-  let memo = request.body.memo;
-  
-  const value = memo;
-  const SQL =   'INSERT INTO memos(memo) VALUES($1) RETURNING id;';
-  let VALUES = [value];
+
+  const memo = request.body.memo;
+  const chore_type = request.body.chore_type;
+
+  let VALUES = [memo, chore_type];
+  const SQL = 'INSERT INTO memos(memo, chore_type) VALUES($1, $2) RETURNING id;';
 
   client.query(SQL, VALUES)
     .then(() => response.redirect('/'))
@@ -52,7 +93,7 @@ function createMemo(request, response) {
 
 
 function getMemos(request, response) {
-  let SQL = 'SELECT * FROM memos ORDER BY id DESC;';
+  let SQL = 'SELECT * FROM memos ORDER BY chore_type DESC;';
 
   client.query(SQL)
     .then(results => {

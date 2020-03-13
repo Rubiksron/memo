@@ -1,0 +1,12 @@
+<h1>This will be your Groceries List!</h1>
+
+<ul id="ulMemos">
+  <% memos.forEach((memo) => { %>
+    <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+     <% if(memo.chore_type === 'groceries') { %>
+        <li>memo:<%= memo.memo%><br> 
+          chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button><li>
+     <% } %>
+    </form>
+ <% }) %>
+</ul>

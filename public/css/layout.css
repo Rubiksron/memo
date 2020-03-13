@@ -10,11 +10,6 @@
   font-size: 1.25rem;
   width: 50%;
 }
-#ulMemos {
-  overflow: scroll;
-  height: 30rem;
-  color: white;
-}
 #hamburgerButton {
   width: 13%;
   position: fixed;
@@ -56,13 +51,62 @@
   font-size: 1rem;
 }
 #deleteButton:active {
-  background-color: #3e8e41;
+  background-color: #666;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 #bearHQ {
   color: rgb(238, 3, 238);
 }
+
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
 
 @media only screen and (min-width: 700px) {
   li {
