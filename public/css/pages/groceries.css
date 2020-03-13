@@ -1,3 +1,6 @@
+html {
+  margin-top: 3rem;
+}
 body {
   background-color: green;
 }
@@ -31,4 +34,13 @@ li {
   overflow: scroll;
   border: ridge lightgreen;
   color: darkblue;
+}
+.dropbtn {
+  border-radius: .25rem;
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
 }

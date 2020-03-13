@@ -1,3 +1,4 @@
+
 body {
   background-image: url("./images/stars.jpg");
   font-size: 1rem;
@@ -9,7 +10,6 @@ h1 {
 form {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  /* margin-right: 2rem; */
   text-align: center;
   padding: .5rem;
 }
@@ -26,6 +26,7 @@ fieldset {
   width: 80%;
   height: 22rem;
   margin: auto;
+  margin-top: 3rem;
   padding: 1.25rem;
   box-shadow: 3px 3px 10px black;
 }                           
