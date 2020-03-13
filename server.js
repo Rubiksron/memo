@@ -77,9 +77,11 @@ function getGroceries(request, response) {
 function createMemo(request, response) {
 
   const memo = request.body.memo.toLowerCase();
-  const chore_type = request.body.chore_type.toLowerCase();
+  // const chore_type = request.body.chore_type.toLowerCase();
+  const choreType = request.body.choreType.toLowerCase();
+  console.log('choreType: ', choreType);
 
-  let VALUES = [memo, chore_type];
+  let VALUES = [memo, choreType];
   const SQL = 'INSERT INTO memos(memo, chore_type) VALUES($1, $2) RETURNING id;';
 
   client.query(SQL, VALUES)
@@ -88,7 +90,7 @@ function createMemo(request, response) {
 }
 
 function getMemos(request, response) {
-  let SQL = 'SELECT * FROM memos ORDER BY chore_type DESC;';
+  let SQL = 'SELECT * FROM memos ORDER BY chore_type ASC;';
 
   client.query(SQL)
     .then(results => {
