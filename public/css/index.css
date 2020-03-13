@@ -9,7 +9,9 @@ h1 {
 form {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  /* margin-right: 2rem; */
   text-align: center;
+  padding: .5rem;
 }
 h3 {
   color: white;
@@ -25,8 +27,11 @@ fieldset {
   height: 22rem;
   margin: auto;
   padding: 1.25rem;
-  box-shadow: 3px 3px 10px lightgreen;
+  box-shadow: 3px 3px 10px black;
 }                           
+ul {
+  width: 90%;
+}
 li {
   background-image: linear-gradient(to right,white, rgb(214, 247, 247));
   list-style-type: none;
@@ -35,7 +40,6 @@ li {
   font-family: italic;
   font-size: 1.5rem;
   border-radius: .25rem;
-  margin-right: 2rem;
   padding: .5rem;
   box-shadow: 3px 3px 10px lightgreen;
   overflow: scroll;

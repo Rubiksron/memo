@@ -1,10 +1,25 @@
-<ul id="ulMemos">
-  <% memos.forEach((memo) => { %>
-    <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-     <% if(memo.chore_type === 'hardware') { %>
-        <li>memo:<%= memo.memo%><br> 
-          chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button><li>
-     <% } %>
-    </form>
- <% }) %>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/pages/hardware.css">
+  <title>hardware</title>
+</head>
+<body>
+  
+  <h1>you hardware chores</h1>
+
+  <ul id="ulMemos">
+    <% memos.forEach((memo) => { %>
+      <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+       <% if(memo.chore_type === 'hardware') { %>
+          <li>memo:<%= memo.memo%><br> 
+            chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button><li>
+       <% } %>
+      </form>
+   <% }) %>
+  </ul>
+  
+</body>
+</html>
