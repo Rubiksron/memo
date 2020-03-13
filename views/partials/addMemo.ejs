@@ -1,7 +1,14 @@
 <form action="/createMemo" method="post" name=create required>
   <fieldset>
     <input type="text" placeholder="memo here..." name="memo" id="memo" required><br>
-    <input type="text" placeholder="groceries, pharmacy, hardware.." name="chore_type" required><br>
+    <form id="radioButtons">
+      <input type="radio" name="choreType" value="groceries">groceries
+      <br>
+      <input type="radio" name="choreType" value="hardware">hardware
+      <br>
+      <input type="radio" name="choreType" value="pharmacy">pharmacy
+      <br>
+   </form>
     <button id="add" type="submit">+ Add +</button>
   </fieldset>
 </form>
