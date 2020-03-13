@@ -1,12 +1,25 @@
-<h1>This will be your pharmacy chores!!</h1>
-
-<ul id="ulMemos">
-  <% memos.forEach((memo) => { %>
-    <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-     <% if(memo.chore_type === 'pharmacy') { %>
-        <li>memo:<%= memo.memo%><br> 
-          chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button><li>
-     <% } %>
-    </form>
- <% }) %>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/pages/pharmacy.css">
+  <title>pharmacy</title>
+</head>
+<body>
+  
+  <h1>your pharmacy chores!!</h1>
+  
+  <ul id="ulMemos">
+    <% memos.forEach((memo) => { %>
+      <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+       <% if(memo.chore_type === 'pharmacy') { %>
+          <li>memo:<%= memo.memo%><br> 
+            chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button><li>
+       <% } %>
+      </form>
+   <% }) %>
+  </ul>
+  
+</body>
+</html>
