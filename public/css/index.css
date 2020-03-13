@@ -1,6 +1,4 @@
-#radioButtons {
-  background-color: red;
-}
+
 body {
   background-image: url("./images/stars.jpg");
   font-size: 1rem;
@@ -14,6 +12,9 @@ form {
   margin-bottom: 2rem;
   padding: .5rem;
 }
+span {
+  font-size: 5rem;
+}
 h3 {
   color: white;
 }
@@ -25,7 +26,7 @@ fieldset {
   border-radius: .25rem;
   border-color: lightgreen;
   width: 80%;
-  height: 22rem;
+  height: 28rem;
   margin: auto;
   margin-top: 3rem;
   padding: 1.25rem;
