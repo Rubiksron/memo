@@ -1,7 +1,26 @@
-<ul id="ulMemos">
+<ul>
   <% memos.forEach((memo) => { %>
-    <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-      <li><%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
+   <% if( memo.chore_type === 'groceries' ) { %>
+      <form style="background-color:green;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+          <li>memo:<%= memo.memo%><br> 
+            chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button></li>
+      </form>
+   <% } %>
+   
+   <% if( memo.chore_type === 'pharmacy' ) { %>
+    <form  style="background-color:red;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+        <li>memo:<%= memo.memo%><br> 
+          chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button>
+        </li>
     </form>
+    <% } %>
+
+    <% if( memo.chore_type === 'hardware' ) { %>
+      <form style="background-color:orange;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+          <li>memo:<%= memo.memo%><br> 
+            chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button></li>
+      </form>
+   <% } %>
+
  <% }) %>
 </ul>
