@@ -10,20 +10,6 @@
   font-size: 1.25rem;
   width: 50%;
 }
-#hamburgerButton {
-  width: 13%;
-  position: fixed;
-  margin-right: 0px;
-  top: .25rem;
-  right: .25rem;
-  padding: 0;
-  font-size: 2rem;
-}  
-#hamburgerButton:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 #choreBear {
   font-size: 2rem;
   color: white;
@@ -72,8 +58,10 @@
 }
 
 .dropdown {
-  position: relative;
+  position: fixed;
   display: inline-block;
+  top: .5rem;
+  right: .5rem;
 }
 
 .dropdown-content {
