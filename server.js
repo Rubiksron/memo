@@ -48,8 +48,6 @@ function getHardware(request, response) {
     .catch(err => console.log('ya done goofed: ', err));
 }
 
-
-
 function getPharmacy(request, response) {
   console.log('inside the getPharmacy function');
 
@@ -62,7 +60,6 @@ function getPharmacy(request, response) {
     })
     .catch(err => console.log('ya done goofed: ', err));
 }
-
 
 function getGroceries(request, response) {
   console.log('inside the getGroceries function');
@@ -77,11 +74,10 @@ function getGroceries(request, response) {
     .catch(err => console.log('ya done goofed: ', err));
 }
 
-
 function createMemo(request, response) {
 
-  const memo = request.body.memo;
-  const chore_type = request.body.chore_type;
+  const memo = request.body.memo.toLowerCase();
+  const chore_type = request.body.chore_type.toLowerCase();
 
   let VALUES = [memo, chore_type];
   const SQL = 'INSERT INTO memos(memo, chore_type) VALUES($1, $2) RETURNING id;';
@@ -90,7 +86,6 @@ function createMemo(request, response) {
     .then(() => response.redirect('/'))
     .catch(err => console.log('ya done goofed: ',err));
 }
-
 
 function getMemos(request, response) {
   let SQL = 'SELECT * FROM memos ORDER BY chore_type DESC;';
@@ -103,7 +98,6 @@ function getMemos(request, response) {
     .catch(err => console.log('ya done goofed: ', err));
 }
 
-
 function deleteMemo(request, response) {
   let id = request.params.id;
 
@@ -114,7 +108,6 @@ function deleteMemo(request, response) {
     .then(() => response.redirect('/'))
     .catch(err => console.log('ya done goofed: ', err));
 }
-
 
 client.connect()
   .then(() => {
