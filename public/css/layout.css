@@ -17,7 +17,6 @@
 #choreBear {
   font-size: 2rem;
   color: white;
-  font-family: cursive;
   width: 95%;
   margin: auto;
   border-radius: .25rem;
@@ -44,9 +43,6 @@
   background-color: #666;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
-#bearHQ {
-  color: rgb(238, 3, 238);
 }
 .moveRight {
   margin-right: 2rem;
