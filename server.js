@@ -33,8 +33,8 @@ const getDrugstore = require('./lib/getDrugstore');
 const deleteMemo = require('./lib/deleteMemo');
 
 //Routes
-// app.get('/', login);
-app.get('/', getMemos);
+app.get('/', login);
+app.get('/getMemos', getMemos);
 app.get('/groceries', getGroceries);
 app.get('/drugstore', getDrugstore);
 app.get('/hardware', getHardware);
@@ -42,9 +42,11 @@ app.post('/createMemo', createMemo);
 app.delete('/delete/:id', deleteMemo);
 app.get('*', (request, response) => response.status(404).send('This Route Does Not Exist'));
 
-// function login(request, response) {
-//   console.log('login here!!!!!!')
-// }
+function login(request, response) {
+  const userName = request.body.user;
+  console.log('login here!!!!!!');
+  response.render('./pages/login', { userName: userName});
+}
 
 client.connect()
   .then(() => {
