@@ -7,7 +7,7 @@
       </form>
    <% } %>
    
-   <% if( memo.chore_type === 'pharmacy' ) { %>
+   <% if( memo.chore_type === 'drugstore' ) { %>
     <form class="moveRight"  style="background-color:darkred;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
         <li>chore: <%= memo.memo%><button type="submit" id="deleteButton">X</button>
         </li>
