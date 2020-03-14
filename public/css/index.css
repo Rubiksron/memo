@@ -1,22 +1,21 @@
 
 body {
   background-image: url("./images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-size: 1rem;
   overflow: scroll;
 }
-h1 {
-  text-align: center;
+h3 {
+  color: white;
 }
 form {
-  margin-top: 2rem;
   margin-bottom: 2rem;
   padding: .5rem;
 }
 span {
   font-size: 5rem;
-}
-h3 {
-  color: white;
 }
 fieldset {
   background-image: url("./images/polar-bear.jpg");
@@ -30,13 +29,13 @@ fieldset {
   margin: auto;
   margin-top: 3rem;
   padding: 1.25rem;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 3px 3px 20px lightgreen;
 }                           
 ul {
   width: 90%;
 }
 li {
-  background-image: linear-gradient(to right,white, rgb(214, 247, 247));
+  background-color: white;
   list-style-type: none;
   margin: auto;
   text-align: center;
@@ -44,7 +43,7 @@ li {
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
-  box-shadow: 3px 3px 10px lightgreen;
+  box-shadow: 3px 3px 5px black;
   overflow: scroll;
   border: ridge lightgreen;
   color: darkblue;

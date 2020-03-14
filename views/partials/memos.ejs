@@ -2,24 +2,21 @@
   <% memos.forEach((memo) => { %>
 
    <% if( memo.chore_type === 'groceries' ) { %>
-      <form class="moveRight" style="background-color:green;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-          <li>memo:<%= memo.memo%><br> 
-            chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button></li>
+      <form class="moveRight" id="groceries" style="background-color:olive;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+          <li>memo: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
       </form>
    <% } %>
    
    <% if( memo.chore_type === 'pharmacy' ) { %>
-    <form class="moveRight"  style="background-color:red;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-        <li>memo:<%= memo.memo%><br> 
-          chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button>
+    <form class="moveRight"  style="background-color:darkred;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+        <li>memo: <%= memo.memo%><button type="submit" id="deleteButton">X</button>
         </li>
     </form>
     <% } %>
 
     <% if( memo.chore_type === 'hardware' ) { %>
       <form class="moveRight" style="background-color:orange;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-          <li>memo:<%= memo.memo%><br> 
-            chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button></li>
+          <li>memo: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
       </form>
    <% } %>
 

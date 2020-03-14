@@ -3,6 +3,10 @@ html {
 }
 body {
   background-color: orange;
+  /* background-image: url("../images/"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: center; */
 }
 li {
   list-style-type: none;
