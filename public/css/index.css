@@ -17,6 +17,9 @@ form {
 span {
   font-size: 5rem;
 }
+a {
+  font-size: 2rem;
+}
 fieldset {
   background-image: url("./images/polar-bear.jpg");
   background-repeat: no-repeat;
