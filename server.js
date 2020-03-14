@@ -29,13 +29,13 @@ const getMemos = require('./lib/getMemos');
 const createMemo = require('./lib/createMemo');
 const getGroceries = require('./lib/getGroceries');
 const getHardware = require('./lib/getHardware');
-const getPharmacy = require('./lib/getPharmacy');
+const getdrugstore = require('./lib/getDrugstore');
 const deleteMemo = require('./lib/deleteMemo');
 
 //Routes
 app.get('/', getMemos);
 app.get('/groceries', getGroceries);
-app.get('/pharmacy', getPharmacy);
+app.get('/drugstore', getdrugstore);
 app.get('/hardware', getHardware);
 app.post('/createMemo', createMemo);
 app.delete('/delete/:id', deleteMemo);
