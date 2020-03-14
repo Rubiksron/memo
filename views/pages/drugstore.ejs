@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/pages/pharmacy.css">
+  <link rel="stylesheet" href="/css/pages/drugstore.css">
   <link rel="stylesheet" href="/css/layout.css">
-  <title>pharmacy</title>
+  <title>drugstore</title>
 </head>
 <body>
   <%- include('../partials/dropdown') %>  
   <ul id="ulMemos">
     <% memos.forEach((memo) => { %>
       <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-       <% if(memo.chore_type === 'pharmacy') { %>
+       <% if(memo.chore_type === 'drugstore') { %>
           <li>chore: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
        <% } %>
       </form>

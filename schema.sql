@@ -10,5 +10,5 @@ INSERT INTO memos (memo, chore_type) VALUES ('food memo 1', 'groceries');
 INSERT INTO memos (memo, chore_type) VALUES ('food memo 2', 'groceries');
 INSERT INTO memos (memo, chore_type) VALUES ('cleaning supplies memo 1', 'hardware');
 INSERT INTO memos (memo, chore_type) VALUES ('cleaning supplies memo 2', 'hardware');
-INSERT INTO memos (memo, chore_type) VALUES ('medicine 1', 'pharmacy');
-INSERT INTO memos (memo, chore_type) VALUES ('medicine 2', 'pharmacy');
+INSERT INTO memos (memo, chore_type) VALUES ('medicine 1', 'drugstore');
+INSERT INTO memos (memo, chore_type) VALUES ('medicine 2', 'drugstore');
