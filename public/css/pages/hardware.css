@@ -1,12 +1,14 @@
 html {
-  margin-top: 3rem;
+  height: 100vh;
+  padding-top: 3rem;
 }
 body {
+  padding-top: 3rem;
   background-color: orange;
-  /* background-image: url("../images/"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* background-position: center; */
+  background-image: url("../images/hardware.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 li {
   list-style-type: none;
@@ -26,7 +28,7 @@ form {
   margin-top: 1rem; 
 }
 li {
-  background-image: linear-gradient(to right,white, rgb(214, 247, 247));
+  background-color: white;
   list-style-type: none;
   width: 90%;
   text-align: center;

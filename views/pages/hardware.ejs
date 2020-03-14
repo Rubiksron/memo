@@ -9,15 +9,11 @@
 </head>
 <body>
   <%- include('../partials/dropdown') %>
-
-  <h1>hardware chores:</h1>
-
   <ul id="ulMemos">
     <% memos.forEach((memo) => { %>
       <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
        <% if(memo.chore_type === 'hardware') { %>
-          <li>memo:<%= memo.memo%><br> 
-            chore-type:<%= memo.chore_type%><button type="submit" id="deleteButton">X</button></li>
+          <li>memo:<%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
        <% } %>
       </form>
    <% }) %>
