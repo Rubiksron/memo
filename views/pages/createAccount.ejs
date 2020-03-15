@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/pages/login.css">
+</head>
+<body>
+
+  
+  <h2>🐻 CREATE AN ACCOUNT 🐻</h2>
+  
+  <form action="/createUser" method="post">
+    
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="enter username" name="user" required>
+      
+      <label><b>Password</b></label>
+      <input type="password" placeholder="enter password" name="password" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+      <button>Create Account</button>
+  </form>
+  <form action="/" method="get">
+    <button>cancel</button>
+  </form>
+</body>
+</html>
