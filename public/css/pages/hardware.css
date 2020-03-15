@@ -36,9 +36,9 @@ li {
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
-  box-shadow: 3px 3px 10px lightgreen;
+  box-shadow: 3px 3px 10px darkorange;
   overflow: scroll;
-  border: ridge lightgreen;
+  border: ridge darkorange;
   color: darkblue;
   margin-right: 6rem;
 }
