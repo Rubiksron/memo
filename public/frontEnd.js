@@ -1,20 +1,20 @@
 'use strict';
 
-console.log('javascript proof of life!');
-const user = document.getElementById('loginForm');
-user.addEventListener('submit', userHandler);
+$( document ).ready(function() {
+  console.log( 'jquery ready!');
+  if(localStorage.test) {
+    const userObjParsed = JSON.parse(localStorage.test);
+    console.log('data received from local storage: ', userObjParsed.name);
+  } else {
+    console.error('ya done goofed!');
+  }
+});
 
-function userHandler(event) {
+$('#loginForm').on('submit', function() {
   const user = {};
-  console.log('userHandler proof of life!');
-
   user.name = event.target.user.value;
   user.password = event.target.password.value;
-  console.log('user.name: ', user.name);
-  console.log('user.password: ', user.password);
-
-  var userObjStringified = JSON.stringify(user);
-
+  
+  const userObjStringified = JSON.stringify(user);
   localStorage.setItem('test', userObjStringified);
-}
-
+})
