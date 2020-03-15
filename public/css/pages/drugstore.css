@@ -11,7 +11,18 @@ body {
   background-position: center;
 }
 li {
+  background-color: white;
   list-style-type: none;
+  margin-right: 2rem;
+  text-align: center;
+  font-family: italic;
+  font-size: 1.5rem;
+  border-radius: .25rem;
+  padding: .5rem;
+  box-shadow: 3px 3px 10px darkred;
+  overflow: scroll;
+  border: ridge darkred;
+  color: darkblue;
 }
 h1 {
   color:black;
@@ -33,19 +44,6 @@ h1 {
 form {
   margin-right: 2rem;
   margin-top: 1rem; 
-}
-li {
-  background-color: white;
-  list-style-type: none;
-  text-align: center;
-  font-family: italic;
-  font-size: 1.5rem;
-  border-radius: .25rem;
-  padding: .5rem;
-  box-shadow: 3px 3px 10px lightgreen;
-  overflow: scroll;
-  border: ridge lightgreen;
-  color: darkblue;
 }
 .dropbtn {
   border-radius: .25rem;
