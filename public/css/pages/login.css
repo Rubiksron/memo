@@ -5,10 +5,16 @@ h2 {
   text-align: center;
 }
 form {
-  border: .20rem solid #f1f1f1;
   border-radius: .25rem;
 }
-
+#createAccountButton {
+  width: 90%;
+  font-size: 1rem;
+  text-align: center;
+}
+#creatAccountForm {
+  text-align: center;
+}
 input[type=text], input[type=password] {
   width: 100%;
   padding: .75rem 1.25rem;
@@ -17,6 +23,7 @@ input[type=text], input[type=password] {
   border: .1rem solid #ccc;
   box-sizing: border-box;
   border-radius: .25rem;
+  font-size: 1rem;
 }
 
 button {
@@ -26,26 +33,29 @@ button {
   margin: .5rem 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   border-radius: .25rem;
+  font-size: 1rem;
 }
 
 button:hover {
   opacity: 0.8;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: .5rem 1rem;
-  background-color: #f44336;
-  border-radius: .25rem;
-}
-
 .container {
-  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 span.psw {
   float: right;
   padding-top: 1rem;
 }
+#createAccountDiv {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: lightgreen;
+  margin: auto;
+  border-radius: .25rem;
+}
+
