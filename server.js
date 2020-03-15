@@ -37,6 +37,8 @@ const checkPassword = require('./lib/checkPassword');
 const createAccount = require('./lib/createAccount');
 
 //Routes
+//the below call back 'login' is not invoked with an index.html in the public file
+//the other routes are called as expected.
 app.get('/', login);
 app.get('/createAccount', createAccount);
 app.post('/createUser', createUser);
