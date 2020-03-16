@@ -5,6 +5,7 @@ $( document ).ready(function() {
     const userObjParsed = JSON.parse(localStorage.choreBear);
     if(userObjParsed.permission) {
       console.log('persmission granted');
+      document.getElementById('permissionButton').click();
     }
   } else {
     console.error('Ron - ERROR: user not found, create new account!');
