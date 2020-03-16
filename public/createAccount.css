@@ -59,10 +59,13 @@ span.psw {
   border-radius: .25rem;
 }
 #cancelButton {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
   background-color: red;
-  margin: auto;
-  border-radius: .25rem;
+  color: white;
+  padding: 1rem;
   width: 100%;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  border-radius: .25rem;
+  font-size: 1rem;
 }
