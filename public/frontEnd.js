@@ -1,12 +1,13 @@
 'use strict';
 
 $( document ).ready(function() {
-  console.log( 'jquery ready!');
-  if(localStorage.test) {
-    const userObjParsed = JSON.parse(localStorage.test);
-    console.log('data received from local storage: ', userObjParsed.name);
+  if(localStorage.choreBear) {
+    const userObjParsed = JSON.parse(localStorage.choreBear);
+    if(userObjParsed.permission) {
+      console.log('persmission granted');
+    }
   } else {
-    console.error('ya done goofed!');
+    console.error('Ron - ERROR: user not found, create new account!');
   }
 });
 
@@ -14,7 +15,8 @@ $('#loginForm').on('submit', function() {
   const user = {};
   user.name = event.target.user.value;
   user.password = event.target.password.value;
-  
+  user.permission = true;
+
   const userObjStringified = JSON.stringify(user);
-  localStorage.setItem('test', userObjStringified);
-})
+  localStorage.setItem('choreBear', userObjStringified);
+});
