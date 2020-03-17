@@ -1,5 +1,8 @@
 footer {
   background-image: url("./images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border: lightblue solid .10rem;
   text-align: center;
   color: lightskyblue;

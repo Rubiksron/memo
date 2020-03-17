@@ -5,19 +5,25 @@ $( document ).ready(function() {
   if(localStorage.choreBear) {
     const userObjParsed = JSON.parse(localStorage.choreBear);
     if(userObjParsed.permission) {
+      console.log('user has permission');
       document.getElementById('permissionButton').click();
     }
   } else {
-    console.error('Ron - ERROR: User Not Found, Create New Account!');
+    console.log('user does not have permission');
   }
 });
-// Grabbing the user name and password from the form and storing in Local Storage
-$('#loginForm').on('submit', function() {
+
+$('#createAccountForm').on('submit', function() {
   const user = {};
   user.name = event.target.user.value;
   user.password = event.target.password.value;
-  user.permission = true;
+  user.remember = event.target.remember.checked;
 
-  const userObjStringified = JSON.stringify(user);
-  localStorage.setItem('choreBear', userObjStringified);
+  if(user.remember) {
+    user.permission = true;
+    const userObjStringified = JSON.stringify(user);
+    localStorage.setItem('choreBear', userObjStringified);
+  } else {
+    console.log('- we did not save your data locally -');
+  }
 });
