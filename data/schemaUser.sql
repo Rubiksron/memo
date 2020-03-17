@@ -6,4 +6,6 @@ CREATE TABLE IF NOT EXISTS users (
   user_password VARCHAR(255)
 );
 
-INSERT INTO users (user_name, user_password) VALUES ('ron', 'super secret password');
+INSERT INTO users (user_name, user_password) VALUES ('ron', 'emerald');
+INSERT INTO users (user_name, user_password) VALUES ('lauren', 'lavender');
+INSERT INTO users (user_name, user_password) VALUES ('dog', 'woof');
