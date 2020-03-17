@@ -1,7 +1,8 @@
 'use strict';
 
 // This function runs on page load, checks to see if the user has 'permission'
-$( document ).ready(function() {
+
+$(document).ready(function() {
   if(localStorage.choreBear) {
     const userObjParsed = JSON.parse(localStorage.choreBear);
     if(userObjParsed.permission) {
