@@ -4,6 +4,7 @@ require('dotenv').config();
 
 //Application Dependencies
 const express = require('express');
+
 // const pg = require('pg');
 const methodOverride = require('method-override');
 
@@ -14,12 +15,12 @@ const PORT = process.env.PORT || 3001;
 //Database Setup
 const client = require('./lib/Client');
 
-//Set view enginge for server-side templating
-app.set('view engine', 'ejs');
 
 //Static Routes
 app.use(express.static('public'));
 
+//Set view enginge for server-side templating
+app.set('view engine', 'ejs');
 //Application Middleware
 app.use(express.urlencoded({ extended:true }));
 app.use(methodOverride('_method'));
