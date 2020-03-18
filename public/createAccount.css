@@ -1,5 +1,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: chocolate;
+  background-image: url("/css/images/signing-up.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
 }
 h2 {
   text-align: center;
