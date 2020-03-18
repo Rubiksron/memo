@@ -42,7 +42,6 @@ h1 {
   font-size: 1rem;
 }
 form {
-  margin-right: 2rem;
   margin-top: 1rem; 
 }
 .dropbtn {
@@ -53,4 +52,9 @@ form {
   font-size: 1rem;
   border: none;
   cursor: pointer;
+}
+fieldset {
+  background-color: darkkhaki;
+  width: 90%;
+  margin: auto;
 }

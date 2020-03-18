@@ -39,6 +39,7 @@ fieldset {
 }                           
 ul {
   width: 90%;
+  margin: auto;
 }
 li {
   background-color: white;

@@ -9,6 +9,8 @@
 </head>
 <body>
   <%- include('../partials/dropdown') %>
+  <%- include('../partials/addMemo') %>
+
   <ul id="ulMemos">
     <% memos.forEach((memo) => { %>
       <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
