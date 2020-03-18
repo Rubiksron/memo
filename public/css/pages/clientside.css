@@ -1,3 +1,13 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: chocolate;
+  background-image: url("/css/images/bears-working.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
 #createAccountButton {
   border-radius: .25rem;
   width: 100%;
