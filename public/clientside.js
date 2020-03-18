@@ -14,7 +14,7 @@ $(document).ready(function() {
   }
 });
 
-$('#createAccountForm').on('submit', function() {
+$('#createAccountForm, #choreBearLogin').on('submit', function() {
   const user = {};
   user.name = event.target.user.value;
   user.password = event.target.password.value;
@@ -24,7 +24,6 @@ $('#createAccountForm').on('submit', function() {
     user.permission = true;
     const userObjStringified = JSON.stringify(user);
     localStorage.setItem('choreBear', userObjStringified);
-  } else {
-    console.log('- we did not save your data locally -');
   }
+  console.log('- we did not save your data locally -');
 });
