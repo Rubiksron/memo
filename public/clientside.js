@@ -3,8 +3,8 @@
 // This function runs on page load, checks to see if the user has 'permission'
 
 $(document).ready(function() {
-  if(localStorage.choreBear) {
-    const userObjParsed = JSON.parse(localStorage.choreBear);
+  if(localStorage.choreBearUserInfo) {
+    const userObjParsed = JSON.parse(localStorage.choreBearUserInfo);
     if(userObjParsed.permission) {
       console.log('user has permission');
       document.getElementById('permissionButton').click();
@@ -23,7 +23,7 @@ $('#createAccountForm, #choreBearLogin').on('submit', function() {
   if(user.remember) {
     user.permission = true;
     const userObjStringified = JSON.stringify(user);
-    localStorage.setItem('choreBear', userObjStringified);
+    localStorage.setItem('choreBearUserInfo', userObjStringified);
   }
   console.log('- we did not save your data locally -');
 });
