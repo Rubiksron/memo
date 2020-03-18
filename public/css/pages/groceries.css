@@ -4,28 +4,11 @@ html {
 }
 body {
   padding-top: 3rem;
-  background-color: olive;
-  background-image: url("../images/groceries.jpg"); 
+  background-color: darkred;
+  background-image: url("../images/drugstore.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
-}
-li {
-  list-style-type: none;
-}
-#deleteButton {
-  border-radius: .25rem;
-  border: ridge red;
-  color: white;
-  background-color:red;
-  float: right;
-  box-shadow: 1px 1px 4px darkred;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1rem;
-}
-form {
-  margin-right: 2rem;
-  margin-top: 1rem; 
+  background-position: center;
 }
 li {
   background-color: white;
@@ -36,10 +19,21 @@ li {
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
-  box-shadow: 3px 3px 10px lightgreen;
+  box-shadow: 3px 3px 10px darkred;
   overflow: scroll;
-  border: ridge lightgreen;
+  border: ridge darkred;
   color: darkblue;
+}
+h1 {
+  color:black;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: .5rem;
+}
+
+form {
+  margin-top: 1rem; 
 }
 .dropbtn {
   border-radius: .25rem;
@@ -49,4 +43,19 @@ li {
   font-size: 1rem;
   border: none;
   cursor: pointer;
+}
+fieldset {
+  background-color: darkkhaki;
+  width: 90%;
+  margin: auto;
+}
+#deleteButton {
+  border-radius: .25rem;
+  border: ridge red;
+  color: white;
+  background-color:red;
+  float: right;
+  box-shadow: 1px 1px 4px darkred;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
 }

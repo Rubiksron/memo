@@ -4,14 +4,32 @@ html {
 }
 body {
   padding-top: 3rem;
-  background-color: orange;
-  background-image: url("../images/hardware.jpg"); 
+  background-color: darkred;
+  background-image: url("../images/drugstore.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 li {
+  background-color: white;
   list-style-type: none;
+  margin-right: 2rem;
+  text-align: center;
+  font-family: italic;
+  font-size: 1.5rem;
+  border-radius: .25rem;
+  padding: .5rem;
+  box-shadow: 3px 3px 10px darkred;
+  overflow: scroll;
+  border: ridge darkred;
+  color: darkblue;
+}
+h1 {
+  color:black;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: .5rem;
 }
 #deleteButton {
   border-radius: .25rem;
@@ -24,23 +42,7 @@ li {
   font-size: 1rem;
 }
 form {
-  margin-right: 2rem;
   margin-top: 1rem; 
-}
-li {
-  background-color: white;
-  list-style-type: none;
-  width: 90%;
-  text-align: center;
-  font-family: italic;
-  font-size: 1.5rem;
-  border-radius: .25rem;
-  padding: .5rem;
-  box-shadow: 3px 3px 10px darkorange;
-  overflow: scroll;
-  border: ridge darkorange;
-  color: darkblue;
-  margin-right: 6rem;
 }
 .dropbtn {
   border-radius: .25rem;
@@ -50,4 +52,9 @@ li {
   font-size: 1rem;
   border: none;
   cursor: pointer;
+}
+fieldset {
+  background-color: darkkhaki;
+  width: 90%;
+  margin: auto;
 }
