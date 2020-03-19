@@ -3,9 +3,9 @@ html {
   padding-top: 3rem;
 }
 body {
-  padding-top: 3rem;
-  background-color: darkred;
-  background-image: url("../images/drugstore.jpg"); 
+  padding-top: 2rem;
+  background-color: orange;
+  background-image: url("../images/hardware.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,9 +19,9 @@ li {
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
-  box-shadow: 3px 3px 10px darkred;
+  box-shadow: 3px 3px 10px orange;
   overflow: scroll;
-  border: ridge darkred;
+  border: ridge orange;
   color: darkblue;
 }
 h1 {
@@ -30,16 +30,6 @@ h1 {
   width: 80%;
   margin: auto;
   padding: .5rem;
-}
-#deleteButton {
-  border-radius: .25rem;
-  border: ridge red;
-  color: white;
-  background-color:red;
-  float: right;
-  box-shadow: 1px 1px 4px darkred;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1rem;
 }
 form {
   margin-top: 1rem; 
@@ -57,4 +47,22 @@ fieldset {
   background-color: darkkhaki;
   width: 90%;
   margin: auto;
+  border-radius: .25em;
+}
+#deleteButton {
+  border-radius: .25rem;
+  border: ridge red;
+  color: white;
+  background-color:red;
+  float: right;
+  box-shadow: 1px 1px 4px darkred;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+#memo {
+  border-radius: .25rem;
+  font-size: 1.5rem;
+  padding: .25em;
+  font-family: italic;
+  border: ridge lightgreen;
 }
