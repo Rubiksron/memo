@@ -24,16 +24,16 @@ a {
   font-size: 2rem;
 }
 fieldset {
-  background-image: url("./images/polar-bear.jpg");
+  background-color: lightblue;
+  background-image: url("./images/bears-main-right.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: .25rem;
   border-color: lightgreen;
   width: 80%;
-  height: 32rem;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 1.25rem;
   box-shadow: 3px 3px 20px lightgreen;
 }                           

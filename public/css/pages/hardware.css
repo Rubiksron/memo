@@ -34,38 +34,12 @@ h1 {
 form {
   margin-top: 1rem; 
 }
-.dropbtn {
-  border-radius: .25rem;
-  background-color: #4CAF50;
-  color: white;
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-}
 fieldset {
   background-color: darkkhaki;
   width: 80%;
   margin: auto;
   border-radius: .25em;
   text-align: center;
-}
-#deleteButton {
-  border-radius: .25rem;
-  border: ridge red;
-  color: white;
-  background-color:red;
-  float: right;
-  box-shadow: 1px 1px 4px darkred;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1rem;
-}
-#memo {
-  border-radius: .25rem;
-  font-size: 1.5rem;
-  padding: .25em;
-  font-family: italic;
-  border: ridge lightgreen;
 }
 #radioButtonsDiv {
   font-size: 0;

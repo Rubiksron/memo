@@ -2,7 +2,7 @@
   <% memos.forEach((memo) => { %>
 
    <% if( memo.chore_type === 'groceries' ) { %>
-      <form class="moveRight" id="groceries" style="background-color:olive;" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+      <form class="moveRight" id="groceries"  action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
           <li>groceries <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
       </form>
    <% } %>
