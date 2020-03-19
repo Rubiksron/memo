@@ -36,5 +36,14 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="clientside.js"></script>
+
+  <script>
+ if(localStorage.choreBearUser) {
+    const userObjParsed = JSON.parse(localStorage.choreBearUser);
+    let name = userObjParsed.name;
+    console.log(`thanks for signing up, ${name}, from createAccount.js!`);
+  } 
+  </script>
+
 </body>
 </html>
