@@ -3,8 +3,8 @@
 // This function runs on page load, checks to see if the user has 'permission'
 
 $(document).ready(function() {
-  if(localStorage.choreBearUserInfo) {
-    const userObjParsed = JSON.parse(localStorage.choreBearUserInfo);
+  if(localStorage.choreBearUser) {
+    const userObjParsed = JSON.parse(localStorage.choreBearUser);
     if(userObjParsed.permission) {
       console.log('user has permission');
       document.getElementById('permissionButton').click();
@@ -13,6 +13,25 @@ $(document).ready(function() {
     console.log('user does not have permission');
   }
 });
+
+$(document).ready(function() {
+  if(localStorage.choreBearUser) {
+    const userObjParsed = JSON.parse(localStorage.choreBearUser);
+    let name = userObjParsed.name;
+    console.log(`thanks for signing up, ${name}, from clientside.js!`);
+  } 
+});
+
+$('#createAccountForm').on('submit', function() {
+  const user = {};
+  user.name = event.target.user.value;
+  user.password = event.target.password.value;
+  user.remember = event.target.remember.checked;
+
+  //show modal with 'welcome (user)'
+
+});
+
 
 $('#createAccountForm, #choreBearLogin').on('submit', function() {
   const user = {};
@@ -23,7 +42,12 @@ $('#createAccountForm, #choreBearLogin').on('submit', function() {
   if(user.remember) {
     user.permission = true;
     const userObjStringified = JSON.stringify(user);
-    localStorage.setItem('choreBearUserInfo', userObjStringified);
+    localStorage.setItem('choreBearUser', userObjStringified);
   }
-  console.log('- we did not save your data locally -');
 });
+
+$('#logoutButtonForm').on('submit', function() {
+  console.log('user logged out');
+  //jquery fade in and out with modal stating you have been signed out
+  localStorage.clear();
+})
