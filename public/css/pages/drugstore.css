@@ -3,7 +3,7 @@ html {
   padding-top: 3rem;
 }
 body {
-  padding-top: 3rem;
+  padding-top: 2rem;
   background-color: darkred;
   background-image: url("../images/drugstore.jpg"); 
   background-repeat: no-repeat;
@@ -57,4 +57,12 @@ fieldset {
   background-color: darkkhaki;
   width: 90%;
   margin: auto;
+  border-radius: .25em;
+}
+#memo {
+  border-radius: .25rem;
+  font-size: 1.5rem;
+  padding: .25em;
+  font-family: italic;
+  border: ridge lightgreen;
 }

@@ -12,17 +12,18 @@
   font-family: italic;
   height: 2.5rem;
   font-size: 1.25rem;
-  width: 70%;
+  width: 100%;
 }
 #choreBear {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
   color: white;
   width: 95%;
   margin: auto;
   border-radius: .25rem;
+  margin-top: 1.5rem;
 }
 #memo {
-  box-shadow: 5px 5px 30px lightgreen;
   width: 95%;
   margin: auto;
   color: black;

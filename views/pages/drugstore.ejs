@@ -9,13 +9,25 @@
 </head>
 <body>
   <%- include('../partials/dropdown') %>  
-  <%- include('../partials/addMemo') %>
+
+  <form action="/createMemo" method="post" name=create required>
+    <fieldset>
+      <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required><br>
+      <form>
+        <div id="radioButtonsDiv">
+          <input type="radio" name="choreType" value="drugstore" class="radio" checked='true' required>drugstore
+          <br>
+        </div>
+     </form>
+      <button id="add" type="submit">+ Add +</button>
+    </fieldset>
+  </form>
 
   <ul id="ulMemos">
     <% memos.forEach((memo) => { %>
       <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
        <% if(memo.chore_type === 'drugstore') { %>
-          <li>chore: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
+          <li>drugstore: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
        <% } %>
       </form>
    <% }) %>
