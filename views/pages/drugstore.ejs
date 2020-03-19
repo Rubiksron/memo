@@ -12,17 +12,14 @@
 
   <form action="/createMemo" method="post" name=create required>
     <fieldset>
-      <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required><br>
+      <input type="text" placeholder="drugstore chore here..." name="memo" id="memo" required><br>
       <form>
-        <div id="radioButtonsDiv">
-          <input type="radio" name="choreType" value="drugstore" class="radio" checked='true' required>drugstore
-          <br>
-        </div>
-     </form>
+      </form>
       <button id="add" type="submit">+ Add +</button>
     </fieldset>
   </form>
-
+ 
+  
   <ul id="ulMemos">
     <% memos.forEach((memo) => { %>
       <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
