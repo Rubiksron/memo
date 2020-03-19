@@ -1,6 +1,5 @@
 html {
   height: 100vh;
-  padding-top: 3rem;
 }
 body {
   padding-top: 2rem;
@@ -32,11 +31,11 @@ h1 {
   padding: .5rem;
 }
 form {
-  margin-top: 1rem; 
+  margin-top: 3rem; 
 }
 fieldset {
   background-color: darkkhaki;
-  width: 80%;
+  width: 70%;
   margin: auto;
   border-radius: .25em;
   text-align: center;
