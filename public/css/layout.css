@@ -12,7 +12,7 @@
   font-family: italic;
   height: 2.5rem;
   font-size: 1.25rem;
-  width: 100%;
+  width: 94%;
 }
 #choreBear {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -24,11 +24,11 @@
   margin-top: 1.5rem;
 }
 #memo {
-  width: 95%;
-  margin: auto;
-  color: black;
   border-radius: .25rem;
-  padding: .25rem;
+  font-size: 1.5rem;
+  padding: .25em;
+  font-family: italic;
+  border: ridge lightgreen;
 }
 #deleteButton {
   border-radius: .25rem;
@@ -45,37 +45,52 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+#groceries {
+  background-color: olive;
+}
+#hardware {
+  background-color: orange;
+}
+#drugstore {
+  background-color: darkred;
+}
 .moveRight {
   margin-right: 2rem;
 }
 .radio {
   border-radius: 50%;
 }
+.chore {
+  background-color: orangered;
+}
+
  /* -----w3----- */
-.dropbtn {
+ .dropbtn {
+  border-radius: .25rem;
   background-color: #4CAF50;
-  box-shadow: 3px 3px 10px black;
-  border: ridge green .1rem;
   color: white;
   padding: 1rem;
   font-size: 1rem;
+  border: none;
   cursor: pointer;
 }
 
 .dropdown {
   position: fixed;
   display: inline-block;
-  top: .5rem;
-  right: .5rem;
+  top: .75rem;
+  right: .75rem;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  right: .25rem;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: .25rem;
 }
 
 .dropdown-content a {
