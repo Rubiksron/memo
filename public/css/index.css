@@ -1,5 +1,8 @@
-
+/* html {
+  height: 100vh;
+} */
 body {
+  background-color: lightblue;
   background-image: url("./images/stars.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +36,7 @@ fieldset {
   border-color: lightgreen;
   width: 80%;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1.25rem;
   box-shadow: 3px 3px 20px lightgreen;
 }                           
