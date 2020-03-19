@@ -68,3 +68,7 @@ fieldset {
   font-family: italic;
   border: ridge lightgreen;
 }
+#radioButtonsDiv {
+  font-size: 0;
+  padding: 0;
+}
