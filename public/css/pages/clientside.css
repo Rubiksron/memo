@@ -3,7 +3,7 @@ body {
   background-color: chocolate;
   background-image: url("/css/images/bears-main-bottom.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   height: 100vh;
   color: white;
