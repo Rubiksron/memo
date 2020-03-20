@@ -53,6 +53,11 @@
 #drugstore {
   background-color: darkred;
 }
+#allChores {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
 .moveRight {
   margin-right: 2rem;
 }
