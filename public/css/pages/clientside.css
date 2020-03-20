@@ -3,7 +3,7 @@ body {
   background-color: chocolate;
   background-image: url("/css/images/bears-main-bottom.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   height: 100vh;
   color: white;
@@ -57,7 +57,7 @@ body {
   border-radius: .25rem;
   border: ridge silver .1rem;
   box-shadow: 4px 4px 10px grey;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 40vh;
   z-index: 5;
 }
