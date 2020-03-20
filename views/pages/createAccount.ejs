@@ -6,44 +6,35 @@
   <title>Chore Bear Client</title>
   <link rel="stylesheet" href="createAccount.css">
 </head>
-<body>
-  <h2>🐻 Create Account 🐻</h2>
-  
-  <form action="/checkPassword" method="post" id="createAccountForm">
-    
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="enter username" name="user" id="user" required>
+  <body>
+    <h2>🐻 Create Account 🐻</h2>
+
+    <form action="/checkPassword" method="post" id="createAccountForm">
       
-      <label><b>Password</b></label>
-      <input type="password" placeholder="enter password" name="password" id="password" required>
-      
-      <button type="submit">create account</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-  </form>
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="enter username" name="user" id="user" required>
+        
+        <label><b>Password</b></label>
+        <input type="password" placeholder="enter password" name="password" id="password" required>
+        
+        <button type="submit">create account</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    </form>
 
-  <!-- the button below is clicked by anon function that runs at page load -->
-  <form action="/getMemos" style="display: none;">
-    <button id="permissionButton"></button>
-  </form>
+    <!-- the button below is clicked by anon function that runs at page load -->
+    <form action="/getMemos" style="display: none;">
+      <button id="permissionButton"></button>
+    </form>
 
-  <form action="/" method="get">
-    <button id="cancelButton">cancel</button>
-  </form>
+    <form action="/" method="get">
+      <button id="cancelButton">cancel</button>
+    </form>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="clientside.js"></script>
-
-  <script>
- if(localStorage.choreBearUser) {
-    const userObjParsed = JSON.parse(localStorage.choreBearUser);
-    let name = userObjParsed.name;
-    console.log(`thanks for signing up, ${name}, from createAccount.js!`);
-  } 
-  </script>
-
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="clientside.js"></script>
+  </body>
 </html>

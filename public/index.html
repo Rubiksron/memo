@@ -6,31 +6,31 @@
       </head>
       <body>
         
-          <h2>🐻 Chore Bear Log-in🐻</h2>
-      
-      <form action="/checkPassword" method="post" id="choreBearLogin">
-        <div class="container">
-          <label><b>Username</b></label>
-          <input type="text" placeholder="enter username" name="user" required>
-          <label><b>Password</b></label>
-          <input type="password" placeholder="enter password" name="password" required>
-          <button>Log-in</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </div>
-      </form>
+        <h2>🐻 Chore Bear Log-in🐻</h2>
 
-      <form id="logoutButtonForm">
-        <button id="logoutButton">Log-out</button>
-      </form>
-
-      <div id="createAccountDiv">
-        <h2>🐻 Create New Account 🐻</h2>
-        <form id="creatAccountForm" action="/createAccount" method="get">
-          <button id="createAccountButton">Create account</button>
+        <form action="/checkPassword" method="post" id="choreBearLogin">
+          <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="enter username" name="user" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="enter password" name="password" required>
+            <button>Log-in</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+          </div>
         </form>
-      </div>
+
+        <form id="logoutButtonForm">
+          <button id="logoutButton">Log-out</button>
+        </form>
+
+        <div id="createAccountDiv">
+          <h2>🐻 Create New Account 🐻</h2>
+          <form id="creatAccountForm" action="/createAccount" method="get">
+            <button id="createAccountButton">Create account</button>
+          </form>
+        </div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="clientside.js"></script>

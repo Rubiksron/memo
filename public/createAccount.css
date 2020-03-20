@@ -23,6 +23,13 @@ form {
 #creatAccountForm {
   text-align: center;
 }
+#goodbyeModal {
+  width: 90%;
+  margin: auto;
+  background-color: pink;
+  height: 90%;
+  z-index: 5;
+}
 input[type=text], input[type=password] {
   width: 100%;
   padding: .75rem 1.25rem;
