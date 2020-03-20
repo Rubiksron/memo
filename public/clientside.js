@@ -27,7 +27,20 @@ $('#createAccountForm, #choreBearLogin').on('submit', function() {
   }
 });
 
+
 $('#logoutButtonForm').on('submit', function() {
-  localStorage.clear();
-  console.log('user logged out');
+  event.preventDefault();
+
+  if(localStorage.choreBearUser) {
+    $('#show').fadeIn(1000);
+    var userObjParsed = JSON.parse(localStorage.choreBearUser);
+    $('#show').append(`${userObjParsed.name} logged out`);
+    localStorage.clear();
+    console.log('local storage cleared!');
+    $('#show').fadeOut(2500);
+  }
+  else {
+    console.log('no data in local storage!');
+  }
 });
+
