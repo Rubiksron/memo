@@ -18,13 +18,13 @@ li {
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
-  box-shadow: 3px 3px 10px orange;
+  box-shadow: .2rem .2rem .5rem orange;
   overflow: scroll;
   border: ridge orange;
   color: darkblue;
 }
 h1 {
-  color:black;
+  color:pink;
   background-color: white;
   width: 80%;
   margin: auto;

@@ -35,7 +35,7 @@ $('#logoutButtonForm').on('submit', function() {
     $('#showLogout').append(`${userObjParsed.name} logged out`);
     localStorage.clear();
     console.log('local storage cleared!');
-    $('#showLogout').fadeOut(2250);
+    $('#showLogout').fadeOut(2500);
   }
   else {
     console.log('no data in local storage!');

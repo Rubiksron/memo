@@ -18,7 +18,7 @@ li {
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
-  box-shadow: 3px 3px 10px darkred;
+  box-shadow: .2rem .2rem .5rem darkred;
   overflow: scroll;
   border: ridge darkred;
   color: darkblue;
@@ -41,7 +41,6 @@ fieldset {
   text-align: center;
   margin-bottom: 1rem;
 }
-
 #radioButtonsDiv {
   font-size: 0;
 }
