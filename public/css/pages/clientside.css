@@ -45,7 +45,8 @@ body {
 }
 #showLogout {
   background-color: lightblue;
-  background-image: url("../images/logout.jpeg"); 
+  color: black;
+  background-image: url("../images/logout.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -58,7 +59,7 @@ body {
   border: ridge black .1rem;
   box-shadow: 4px 4px 10px grey;
   font-size: 1.5rem;
-  line-height: 40vh;
+  line-height: 5vh;
   z-index: 5;
 }
 button:hover {
