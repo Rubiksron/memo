@@ -1,7 +1,6 @@
 'use strict';
 
 // This function runs on page load, checks to see if the user has 'permission'
-
 $(document).ready(function() {
   if(localStorage.choreBearUser) {
     const userObjParsed = JSON.parse(localStorage.choreBearUser);
@@ -27,7 +26,6 @@ $('#createAccountForm, #choreBearLogin').on('submit', function() {
   }
 });
 
-
 $('#logoutButtonForm').on('submit', function() {
   event.preventDefault();
 
@@ -37,7 +35,7 @@ $('#logoutButtonForm').on('submit', function() {
     $('#showLogout').append(`${userObjParsed.name} logged out`);
     localStorage.clear();
     console.log('local storage cleared!');
-    $('#showLogout').fadeOut(2000);
+    $('#showLogout').fadeOut(2250);
   }
   else {
     console.log('no data in local storage!');
