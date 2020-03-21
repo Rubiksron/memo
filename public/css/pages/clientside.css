@@ -43,7 +43,7 @@ body {
   width: 50%;
   margin-top: 1rem;
 }
-#show {
+#showLogout {
   background-color: lightblue;
   background-image: url("../images/logout.jpeg"); 
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@ body {
   margin: auto;
   text-align: center;
   border-radius: .25rem;
-  border: ridge silver .1rem;
+  border: ridge black .1rem;
   box-shadow: 4px 4px 10px grey;
   font-size: 1.5rem;
   line-height: 40vh;

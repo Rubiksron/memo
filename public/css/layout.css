@@ -1,3 +1,9 @@
+#ulMemos {
+  overflow: scroll;
+  height: 65vh;
+  width: 90%;
+  margin: auto;
+}
 #radioButtonsDiv {
   font-size: 1.75rem;
 }

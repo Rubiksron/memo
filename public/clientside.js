@@ -32,12 +32,12 @@ $('#logoutButtonForm').on('submit', function() {
   event.preventDefault();
 
   if(localStorage.choreBearUser) {
-    $('#show').fadeIn();
+    $('#showLogout').fadeIn();
     var userObjParsed = JSON.parse(localStorage.choreBearUser);
-    $('#show').append(`${userObjParsed.name} logged out`);
+    $('#showLogout').append(`${userObjParsed.name} logged out`);
     localStorage.clear();
     console.log('local storage cleared!');
-    $('#show').fadeOut(2000);
+    $('#showLogout').fadeOut(2000);
   }
   else {
     console.log('no data in local storage!');
