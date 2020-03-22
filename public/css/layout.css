@@ -2,8 +2,9 @@
   width: 90%;
   margin: auto;
   overflow: scroll;
-  height: 65vh;
-  margin-top: 15rem;
+  height: 60vh;
+  margin-top: 8rem;
+  position: fixed;
 }
 #ulMemosMain {
   overflow: none;
