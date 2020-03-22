@@ -10,22 +10,23 @@
 
 </head>
 <body>
-  <h1 id="groceriesTitle">Groceries 🐻</h1>
-  <%- include('../partials/dropdown') %>  
+  <div>
+    <h1 id="groceriesTitle">Groceries 🐻</h1>
+    <%- include('../partials/dropdown') %>  
 
-  <form action="/createMemo" method="post" name=create required>
-    <fieldset>
-      <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required><br>
-      <form>
-      </form>
-      <button id="add" type="submit">+ Add +</button>
-          <div id="radioButtonsDiv">
-            <input style="display: none;" type="radio" name="choreType" value="groceries" class="radio" checked='true' required>
-            <br>
-          </div>
-    </fieldset>
-  </form>
-
+    <form action="/createMemo" method="post" name=create required>
+      <fieldset>
+        <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required><br>
+        <form>
+        </form>
+        <button id="add" type="submit">+ Add +</button>
+        <div id="radioButtonsDiv">
+          <input style="display: none;" type="radio" name="choreType" value="groceries" class="radio" checked='true' required>
+           <br>
+        </div>
+      </fieldset>
+    </form>
+  </div>
   <ul id="ulMemos">
     <% memos.forEach((memo) => { %>
       <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">

@@ -27,8 +27,7 @@ form {
   margin-top: 3rem; 
 }
 fieldset {
-  background-color: darkkhaki;
-  width: 70%;
+  width: 80%;
   margin: auto;
   border-radius: .25em;
   text-align: center;
@@ -38,8 +37,8 @@ fieldset {
   font-size: 0;
 }
 #groceriesTitle {
+  background-color: olive;
   font-family: 'Pacifico', cursive;  
-  /* background-color: olive; */
   font-size: 2rem;
   color: white;
   width: 50%;
