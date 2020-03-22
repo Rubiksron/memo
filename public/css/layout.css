@@ -4,6 +4,7 @@
   overflow: scroll;
   height: 50vh;
   margin-top: 8rem;
+  margin-bottom: 3rem;
 }
 #ulMemosMain {
   overflow: none;
