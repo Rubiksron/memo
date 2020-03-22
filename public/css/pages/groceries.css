@@ -4,7 +4,7 @@ html {
 body {
   padding-top: 2rem;
   background-color: olive;
-  background-image: url("../images/groceries.jpg"); 
+  /* background-image: url("../images/groceries.jpg");  */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,13 +23,6 @@ li {
   border: ridge olive;
   color: darkblue;
 }
-h1 {
-  color:black;
-  background-color: white;
-  width: 80%;
-  margin: auto;
-  padding: .5rem;
-}
 form {
   margin-top: 3rem; 
 }
@@ -44,3 +37,17 @@ fieldset {
 #radioButtonsDiv {
   font-size: 0;
 }
+#groceriesTitle {
+  font-family: 'Pacifico', cursive;  
+  /* background-color: olive; */
+  font-size: 2rem;
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  border-radius: .25rem;
+  position: fixed;
+  top: .75rem;
+  left: .6rem;
+}
+
