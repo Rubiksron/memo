@@ -3,7 +3,7 @@ html {
 }
 body {
   padding-top: 2rem;
-  background-color: orange;
+  background-color: darkorange;
   /* background-image: url("../images/hardware-vintage.jpg");  */
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,8 +27,7 @@ form {
   margin-top: 3rem; 
 }
 fieldset {
-  background-color: darkkhaki;
-  width: 70%;
+  width: 80%;
   margin: auto;
   border-radius: .25em;
   text-align: center;
@@ -38,8 +37,8 @@ fieldset {
   font-size: 0;
 }
 #hardwareTitle {
+  background-color: darkorange;
   font-family: 'Pacifico', cursive;  
-  /* background-color: darkorange; */
   font-size: 2rem;
   color: white;
   width: 50%;

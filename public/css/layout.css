@@ -1,8 +1,11 @@
 #ulMemos {
-  overflow: scroll;
-  height: 65vh;
   width: 90%;
   margin: auto;
+  overflow: scroll;
+  height: 65vh;
+}
+#ulMemosMain {
+  overflow: none;
 }
 #radioButtonsDiv {
   font-size: 1.75rem;
@@ -83,6 +86,7 @@
   font-size: 1rem;
   border: none;
   cursor: pointer;
+  box-shadow: .2rem .2rem .5rem darkgreen;
 }
 .dropdown {
   position: fixed;
