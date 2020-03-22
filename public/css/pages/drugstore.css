@@ -34,6 +34,7 @@ fieldset {
   margin-bottom: 1rem;
   position: fixed;
   margin-left: 1rem;
+  background-color: darkred;
 }
 #radioButtonsDiv {
   font-size: 0;
