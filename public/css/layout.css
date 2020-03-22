@@ -3,6 +3,7 @@
   margin: auto;
   overflow: scroll;
   height: 65vh;
+  margin-top: 13rem;
 }
 #ulMemosMain {
   overflow: none;
@@ -93,6 +94,7 @@
   display: inline-block;
   top: .75rem;
   right: .75rem;
+  z-index: 6;
 }
 
 .dropdown-content {
