@@ -28,10 +28,12 @@ form {
 }
 fieldset {
   width: 80%;
-  margin: auto;
   border-radius: .25em;
   text-align: center;
   margin-bottom: 1rem;
+  position: fixed;
+  margin: auto;
+  margin-left: 1rem;
 }
 #radioButtonsDiv {
   font-size: 0;

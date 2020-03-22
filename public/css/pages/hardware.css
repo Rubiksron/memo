@@ -32,6 +32,8 @@ fieldset {
   border-radius: .25em;
   text-align: center;
   margin-bottom: 1rem;
+  position: fixed;
+  margin-left: 1rem;
 }
 #radioButtonsDiv {
   font-size: 0;
