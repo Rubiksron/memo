@@ -10,6 +10,7 @@ body {
   padding: 1rem;
 }
 h2 {
+  font-family: 'Pacifico', cursive;  
   text-align: center;
 }
 form {
@@ -57,15 +58,6 @@ span.psw {
   width: 90%;
   font-size: 1rem;
   text-align: center;
-}
-#createAccountForm {
-}
-#goodbyeModal {
-  width: 90%;
-  margin: auto;
-  background-color: pink;
-  height: 90%;
-  z-index: 5;
 }
 #rememberMeCheckBox {
   margin-top: .5rem;

@@ -4,7 +4,7 @@ html {
 body {
   padding-top: 2rem;
   background-color: darkred;
-  background-image: url("../images/drugstore.jpg"); 
+  /* background-image: url("../images/drugstore.jpg");  */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,13 +23,6 @@ li {
   border: ridge darkred;
   color: darkblue;
 }
-h1 {
-  color:black;
-  background-color: white;
-  width: 80%;
-  margin: auto;
-  padding: .5rem;
-}
 form {
   margin-top: 3rem; 
 }
@@ -43,4 +36,17 @@ fieldset {
 }
 #radioButtonsDiv {
   font-size: 0;
+}
+#drugstoreTitle {
+  font-family: 'Pacifico', cursive;  
+  /* background-color: darkred; */
+  font-size: 2rem;
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  border-radius: .25rem;
+  position: fixed;
+  top: .75rem;
+  left: .6rem;
 }

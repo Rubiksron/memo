@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/pages/groceries.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   <title>groceries</title>
 
 </head>
 <body>
+  <h1 id="groceriesTitle">Groceries 🐻</h1>
   <%- include('../partials/dropdown') %>  
 
   <form action="/createMemo" method="post" name=create required>
@@ -17,10 +19,10 @@
       <form>
       </form>
       <button id="add" type="submit">+ Add +</button>
-            <div id="radioButtonsDiv">
-              <input style="display: none;" type="radio" name="choreType" value="groceries" class="radio" checked='true' required>
-              <br>
-            </div>
+          <div id="radioButtonsDiv">
+            <input style="display: none;" type="radio" name="choreType" value="groceries" class="radio" checked='true' required>
+            <br>
+          </div>
     </fieldset>
   </form>
 
