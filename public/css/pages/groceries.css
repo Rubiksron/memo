@@ -27,6 +27,7 @@ form {
   margin-top: 3rem; 
 }
 fieldset {
+  background-color: olive;
   width: 80%;
   border-radius: .25em;
   text-align: center;
