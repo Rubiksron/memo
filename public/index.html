@@ -9,7 +9,7 @@
         <h2>🐻 Chore Bear Log-in🐻</h2>
 
         <form action="/checkPassword" method="post" id="choreBearLogin">
-          <div id="showLogout" style="display: none;"></div>
+          <div id="showLogout"></div>
           <div class="container">
             <label><b>Username</b></label>
             <input type="text" placeholder="enter username" name="user" required>
@@ -17,7 +17,7 @@
             <input type="password" placeholder="enter password" name="password" required>
             <button>Log-in</button>
             <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
+              <input class="rememberMeInputBox" type="checkbox" checked="checked" name="remember"> Remember me
             </label>
           </div>
         </form>
