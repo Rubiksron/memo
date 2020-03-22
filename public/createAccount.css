@@ -15,21 +15,6 @@ h2 {
 form {
   border-radius: .25rem;
 }
-#createAccountButton {
-  width: 90%;
-  font-size: 1rem;
-  text-align: center;
-}
-#creatAccountForm {
-  text-align: center;
-}
-#goodbyeModal {
-  width: 90%;
-  margin: auto;
-  background-color: pink;
-  height: 90%;
-  z-index: 5;
-}
 input[type=text], input[type=password] {
   width: 100%;
   padding: .75rem 1.25rem;
@@ -51,20 +36,39 @@ button {
   cursor: pointer;
   border-radius: .25rem;
   font-size: 1rem;
+  margin-top: 2rem;
 }
 
 button:hover {
   opacity: 0.8;
 }
-
 .container {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
-
+.rememberMeInputBox {
+  margin-top: 1rem;
+ }
 span.psw {
   float: right;
   padding-top: 1rem;
+}
+#createAccountButton {
+  width: 90%;
+  font-size: 1rem;
+  text-align: center;
+}
+#createAccountForm {
+}
+#goodbyeModal {
+  width: 90%;
+  margin: auto;
+  background-color: pink;
+  height: 90%;
+  z-index: 5;
+}
+#rememberMeCheckBox {
+  margin-top: .5rem;
 }
 #createAccountDiv {
   padding-top: .5rem;
