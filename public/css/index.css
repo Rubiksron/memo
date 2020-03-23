@@ -34,7 +34,6 @@ fieldset {
   background-size: cover;
   background-position: center;
   border-radius: .25rem;
-  /* border-color: lightgreen; */
   width: 80%;
   margin: auto;
   margin-top: 1rem;
@@ -49,12 +48,10 @@ li {
   padding: .5rem;
   box-shadow: 3px 3px 5px black;
   overflow: scroll;
-  /* border: ridge lightgreen; */
   color: darkblue;
 }
 button {
   border-radius: .25rem;
-  border:ridge black;
   font-family: 'Sen', sans-serif;
 }
 input {

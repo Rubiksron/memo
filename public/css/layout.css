@@ -15,6 +15,7 @@ html {
 }
 li {
   font-family: 'Sen', sans-serif;
+  box-shadow: .1rem .1rem .3rem black;
 }
 #radioButtonsDiv {
   font-size: 1.5rem;
@@ -25,7 +26,7 @@ li {
   border-radius: .25rem;
   border-color: lightgreen;
   color: white;
-  box-shadow: 3px 3px 10px darkgreen;
+  box-shadow: .1rem .1rem .3rem black;
   background-color: green;
   margin-top: .5rem;
   height: 2.5rem;
@@ -53,7 +54,6 @@ li {
   font-size: 1.5rem;
   padding: .25em;
   font-family: italic;
-  border: ridge lightgreen;
   width: 95%;
 }
 #deleteButton {
@@ -89,7 +89,7 @@ li {
 .chore {
   background-color: orangered;
 }
-.dropbtn {
+.dropdownButton {
   font-family: 'Sen', sans-serif;
   border-radius: .25rem;
   background-color: #4CAF50;
@@ -98,7 +98,7 @@ li {
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  box-shadow: .2rem .2rem .5rem darkgreen;
+  box-shadow: .1rem .1rem .3rem black;
 }
 .dropdown {
   position: fixed;
