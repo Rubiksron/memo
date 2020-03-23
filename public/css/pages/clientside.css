@@ -9,6 +9,10 @@ body {
   color: white;
   padding: 1rem;
 }
+
+#user:first-line, #password:first-line {
+  background-color: lightblue;
+}
 label {
   font-size: 1rem;
 }

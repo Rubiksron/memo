@@ -52,4 +52,8 @@ fieldset {
   top: .75rem;
   left: .6rem;
 }
-
+@media only screen and (min-width: 800px) {
+  fieldset {
+    width: 36%;
+  }
+}
