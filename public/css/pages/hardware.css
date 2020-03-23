@@ -17,16 +17,15 @@ li {
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
-  box-shadow: .2rem .2rem .5rem orange;
   overflow: scroll;
-  border: ridge orange;
   color: darkblue;
 }
 form {
   margin-top: 3rem; 
 }
 fieldset {
-  width: 80%;
+  border:none;
+  width: 83%;
   margin: auto;
   border-radius: .25em;
   text-align: center;

@@ -5,10 +5,9 @@
 $(document).ready(function() {
   if(localStorage.choreBearUser) {
     const userObjParsed = JSON.parse(localStorage.choreBearUser);
-    var $user = $('#user').val(userObjParsed.name);
-    var $password = $('#password').val(userObjParsed.password);
-    console.log('$password: ', $password);
-    console.log('$user: ', $user);
+    $('#user').val(userObjParsed.name);
+    $('#password').val(userObjParsed.password);
+
   }
 })
 
