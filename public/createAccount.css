@@ -38,6 +38,7 @@ button {
   border-radius: .25rem;
   font-size: 1rem;
   margin-top: 2rem;
+  font-family: 'Sen', sans-serif;
 }
 
 button:hover {

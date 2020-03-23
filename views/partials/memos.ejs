@@ -3,20 +3,20 @@
 
    <% if( memo.chore_type === 'groceries' ) { %>
       <form class="moveRight" id="groceries"  action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-          <li>groceries: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
+          <li>Groceries: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
       </form>
    <% } %>
    
    <% if( memo.chore_type === 'drugstore' ) { %>
     <form class="moveRight"  id="drugstore" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-        <li>drugstore: <%= memo.memo%><button type="submit" id="deleteButton">X</button>
+        <li>Drugstore: <%= memo.memo%><button type="submit" id="deleteButton">X</button>
         </li>
     </form>
     <% } %>
 
     <% if( memo.chore_type === 'hardware' ) { %>
       <form class="moveRight" id="hardware" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-          <li>hardware: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
+          <li>Hardware: <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
       </form>
    <% } %>
 
