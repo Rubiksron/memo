@@ -46,6 +46,7 @@ li {
   font-size: 2rem;
   color: white;
   text-align: center;
+  margin-bottom: 2rem;
 }
 #memo {
   font-family: 'Sen', sans-serif;
@@ -68,17 +69,23 @@ li {
   box-shadow: 0 .25rem #666;
   transform: translateY(.25rem);
 }
-#groceries {
+#groceriesForm {
   background-color: olive;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
 }
-#hardware {
+#hardwareForm {
   background-color: orange;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
 }
-#drugstore {
+#drugstoreForm {
   background-color: darkred;
-}
-.moveRight {
-  margin-right: 2rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 .radio {
   border-radius: 50%;
