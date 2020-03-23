@@ -41,6 +41,7 @@ const createAccount = require('./lib/createAccount');
 //the below call back 'login' is not invoked with an index.html in the public file
 //the other routes are called as expected.
 app.get('/', login);
+app.get('/logout', logout);
 app.get('/createAccount', createAccount);
 app.post('/createUser', createUser);
 app.post('/checkPassword', checkPassword);
@@ -51,6 +52,10 @@ app.get('/hardware', getHardware);
 app.post('/createMemo', createMemo);
 app.delete('/delete/:id', deleteMemo);
 app.get('*', (request, response) => response.status(404).send('This Route Does Not Exist'));
+
+function logout(request, response) {
+  response.render('./pages/logout');
+}
 
 client.connect()
   .then(() => {
