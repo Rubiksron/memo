@@ -40,7 +40,6 @@ li {
   background-color: white;
   list-style-type: none;
   text-align: center;
-  font-family: italic;
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
@@ -52,6 +51,7 @@ li {
 button {
   border-radius: .25rem;
   border:ridge black;
+  font-family: 'Sen', sans-serif;
 }
 input {
   border-radius: .25rem;
