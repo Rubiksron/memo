@@ -40,7 +40,7 @@ fieldset {
   border-radius: .25rem;
   width: 80%;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 1.25rem;
 }                           
 li {
@@ -52,6 +52,9 @@ li {
   padding: .5rem;
   overflow: scroll;
   color: darkblue;
+  width: 95%;
+  margin: auto;
+
 }
 button {
   border-radius: .25rem;

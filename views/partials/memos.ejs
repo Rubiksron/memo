@@ -2,20 +2,20 @@
   <% memos.forEach((memo) => { %>
 
    <% if( memo.chore_type === 'groceries' ) { %>
-      <form class="moveRight" id="groceries"  action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+      <form id="groceriesForm"  action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
           <li>Groceries<hr><br> <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
       </form>
    <% } %>
    
    <% if( memo.chore_type === 'drugstore' ) { %>
-    <form class="moveRight"  id="drugstore" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+    <form id="drugstoreForm" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
         <li>Drugstore<hr><br> <%= memo.memo%><button type="submit" id="deleteButton">X</button>
         </li>
     </form>
     <% } %>
 
     <% if( memo.chore_type === 'hardware' ) { %>
-      <form class="moveRight" id="hardware" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+      <form id="hardwareForm" action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
           <li>Hardware<hr><br> <%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
       </form>
    <% } %>
