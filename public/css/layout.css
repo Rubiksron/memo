@@ -1,4 +1,8 @@
+html {
+  font-family: 'Sen', sans-serif;
+}
 #ulMemos {
+  font-family: 'Sen', sans-serif;
   width: 90%;
   margin: auto;
   overflow: scroll;
@@ -17,13 +21,13 @@ li {
   font-family: 'Sen', sans-serif;
 }
 #add {
+  font-family: 'Sen', sans-serif;
   border-radius: .25rem;
   border-color: lightgreen;
   color: white;
   box-shadow: 3px 3px 10px darkgreen;
   background-color: green;
   margin-top: .5rem;
-  font-family: italic;
   height: 2.5rem;
   font-size: 1.25rem;
   width: 100%;
@@ -44,6 +48,7 @@ li {
   text-align: center;
 }
 #memo {
+  font-family: 'Sen', sans-serif;
   border-radius: .25rem;
   font-size: 1.5rem;
   padding: .25em;
@@ -58,7 +63,7 @@ li {
   background-color:red;
   float: right;
   box-shadow: 1px 1px 4px darkred;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Sen', sans-serif;
   font-size: 1rem;
 }
 #deleteButton:active {
@@ -85,6 +90,7 @@ li {
   background-color: orangered;
 }
 .dropbtn {
+  font-family: 'Sen', sans-serif;
   border-radius: .25rem;
   background-color: #4CAF50;
   color: white;
