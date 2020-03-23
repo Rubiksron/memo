@@ -15,7 +15,6 @@ html {
 }
 li {
   font-family: 'Sen', sans-serif;
-  box-shadow: .1rem .1rem .3rem black;
 }
 #radioButtonsDiv {
   font-size: 1.5rem;
@@ -53,7 +52,6 @@ li {
   border-radius: .25rem;
   font-size: 1.5rem;
   padding: .25em;
-  font-family: italic;
   width: 95%;
 }
 #deleteButton {
@@ -62,7 +60,6 @@ li {
   color: white;
   background-color:red;
   float: right;
-  box-shadow: 1px 1px 4px darkred;
   font-family: 'Sen', sans-serif;
   font-size: 1rem;
 }
