@@ -7,10 +7,10 @@ footer {
   color: lightskyblue;
   border-radius: .25rem;
   box-shadow: 3px 3px 10px lightblue;
-  padding: .2rem;
+  padding: .25rem;
 }
 h3 {
   text-align: center;
   width: 80%;
-  margin: 1rem auto;
+  margin: .25rem auto;
 }
