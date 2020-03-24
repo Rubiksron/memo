@@ -2,6 +2,10 @@ html {
   font-family: 'Sen', sans-serif;
 }
 #ulMemos {
+  background-image: url("./images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-family: 'Sen', sans-serif;
   width: 90%;
   margin: auto;
