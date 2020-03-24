@@ -3,12 +3,14 @@ html {
 }
 #ulMemos {
   font-family: 'Sen', sans-serif;
-  width: 90%;
+  width: 85%;
   margin: auto;
   overflow: scroll;
   height: 50vh;
-  margin-top: 8rem;
+  margin-top: 11rem;
   margin-bottom: 1rem;
+  background-color: red;
+  border-radius: .25rem;
 }
 #ulMemosMain {
   overflow: none;
@@ -50,7 +52,7 @@ li {
 #memo {
   font-family: 'Sen', sans-serif;
   border-radius: .25rem;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   padding: .25em;
   width: 95%;
 }
