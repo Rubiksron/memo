@@ -47,7 +47,7 @@ fieldset {
   margin: auto;
   border-radius: .25rem;
   position: fixed;
-  top: .75rem;
+  top: .5rem;
   left: .6rem;
 }
 @media only screen and (min-width: 800px) {
