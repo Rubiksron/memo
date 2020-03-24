@@ -26,14 +26,13 @@ form {
 }
 fieldset {
   border:none;
-  width: 100%;
+  width: 83%;
   margin: auto;
   border-radius: .25em;
   text-align: center;
   margin-bottom: 1rem;
-  margin-top: 1rem;
   position: fixed;
-  left: 0rem;  
+  margin-left: 1rem;
   background-color: olive;
 }
 #radioButtonsDiv {
