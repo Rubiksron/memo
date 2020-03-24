@@ -7,8 +7,13 @@ html {
   margin: auto;
   overflow: scroll;
   height: 50vh;
-  margin-top: 8rem;
+  margin-top: 11rem;
   margin-bottom: 1rem;
+  background-color: lightblue;
+  background-image: url("./images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #ulMemosMain {
   overflow: none;
@@ -31,7 +36,7 @@ li {
   margin-top: .5rem;
   height: 2.5rem;
   font-size: 1.25rem;
-  width: 100%;
+  width: 90%;
 }
 #choreBear {
   position: fixed;
@@ -62,7 +67,7 @@ li {
   border-radius: .25rem;
   font-size: 1.5rem;
   padding: .25em;
-  width: 95%;
+  width: 85%;
 }
 #deleteButton {
   border-radius: .25rem;
