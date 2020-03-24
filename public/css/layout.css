@@ -9,7 +9,7 @@ html {
   height: 50vh;
   margin-top: 11rem;
   margin-bottom: 1rem;
-  background-color: red;
+  /* background-color: red; */
   border-radius: .25rem;
 }
 #ulMemosMain {
