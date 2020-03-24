@@ -3,11 +3,11 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 100%;
   text-align: center;
   color: lightskyblue;
-  border-radius: .25rem;
-  box-shadow: 3px 3px 10px black;
-  padding: .25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 h3 {
   text-align: center;
