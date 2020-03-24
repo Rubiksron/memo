@@ -44,6 +44,11 @@ li {
   background-color: darkgreen;
   padding-top: 1rem;
   padding-left: .5rem;
+  background-image: url("./images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: .1rem .1rem .3rem black;
 }
 #allChores {
   font-family: 'Pacifico', cursive;  
