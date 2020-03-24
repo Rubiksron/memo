@@ -39,13 +39,22 @@ li {
   width: 100%;
 }
 #choreBear {
+  background-image: url("./images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: .1rem .1rem .3rem black;
   font-family: 'Pacifico', cursive;  
   font-size: 2rem;
   color: white;
-  width: 95%;
+  width: 100%;
+  background-color: darkgreen;
   margin: auto;
-  border-radius: .25rem;
-  margin-top: .5rem;
+  height: 9.5vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: .5rem;
 }
 #allChores {
   font-family: 'Pacifico', cursive;  

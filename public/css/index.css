@@ -9,6 +9,7 @@ body {
   background-position: center;
   font-size: 1rem;
   overflow: scroll;
+  margin-top: 5rem;
 }
 h3 {
   color: white;
