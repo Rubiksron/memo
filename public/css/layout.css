@@ -9,11 +9,11 @@ html {
   height: 50vh;
   margin-top: 8rem;
   margin-bottom: 1rem;
-  background-color: lightblue;
-  background-image: url("./images/stars.jpg");
+  background-color: darkolivegreen;
+  /* background-image: url("./images/stars.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   border-radius: .25rem;
 }
 #ulMemosMain {
