@@ -19,6 +19,7 @@ li {
 #radioButtonsDiv {
   font-size: 1.5rem;
   font-family: 'Sen', sans-serif;
+  padding: .25rem;
 }
 #add {
   font-family: 'Sen', sans-serif;
