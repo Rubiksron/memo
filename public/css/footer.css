@@ -1,16 +1,16 @@
 footer {
-
-  background-color: darkblue;
   background-image: url("./images/stars.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
   color: lightskyblue;
-  padding: .2rem;
+  border-radius: .25rem;
+  box-shadow: 3px 3px 10px black;
+  padding: .25rem;
 }
 h3 {
   text-align: center;
   width: 80%;
-  margin: 1.25rem auto;
+  margin: .25rem auto;
 }
