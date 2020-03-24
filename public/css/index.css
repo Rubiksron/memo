@@ -54,7 +54,7 @@ li {
   color: darkblue;
   width: 95%;
   margin: auto;
-
+  margin-left: 0rem;
 }
 button {
   border-radius: .25rem;
