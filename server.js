@@ -39,7 +39,7 @@ const createAccount = require('./lib/createAccount');
 const logout = require('./lib/logout');
 
 //Routes
-//the below call back 'login' is not invoked with an index.html in the public file
+//the below call back 'login' is not invoked with the '/' route, but index.html. in the public file
 //the other routes are called as expected.
 app.get('/', login);
 app.get('/logout', logout);

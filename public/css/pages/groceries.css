@@ -4,10 +4,10 @@ html {
 body {
   padding-top: 2rem;
   background-color: olive;
-  /* background-image: url("../images/groceries.jpg");  */
+  /* background-image: url("../images/groceries.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 li {
   background-color: white;
