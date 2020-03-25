@@ -152,4 +152,7 @@ li {
     width: 40%;
     margin: auto;
   }
+  fieldset {
+    margin-top: 8rem;
+  }
 }

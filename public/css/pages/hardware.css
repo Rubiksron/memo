@@ -5,10 +5,10 @@ html {
 body {
   padding-top: 2rem;
   background-color: darkorange;
-  /* background-image: url("../images/hardware-vintage.jpg");  */
+  /* background-image: url("../images/hardware-vintage.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 li {
   background-color: white;
