@@ -36,5 +36,11 @@
    <% }) %>
   </ul>
   <%- include('../partials/footer') %>  
+  <script>
+       if(localStorage.choreBearUser) {
+        const userObjParsed = JSON.parse(localStorage.choreBearUser);
+        console.log('userObjParsed: ', userObjParsed);
+      }
+  </script>
 </body>
 </html>

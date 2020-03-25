@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" style="display: none;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <%= userId %>
+  <form action="/" style="display: none;">
+    <button id="userIdEjs"></button>
+  </form>  <script>
+    var id = <%= userId %>;
+      if(localStorage.choreBearUser) {
+        const userObjParsed = JSON.parse(localStorage.choreBearUser);
+        userObjParsed.id = id;
+        const userObjStringified = JSON.stringify(userObjParsed);
+        localStorage.setItem('choreBearUser', userObjStringified);
+        document.getElementById('userIdEjs').click();
+      }
+      const userObjParsed = JSON.parse(localStorage.choreBearUser);
+      console.log(' after setting in userId.ejs - userObjParsed: ', userObjParsed);
+  </script>
+</body>
+</html>
