@@ -61,7 +61,6 @@ $('#createAccountForm').on('submit', function() {
     localStorage.setItem('choreBearUser', userObjStringified);
   }
   // }
-  alert('stop clientside.js');
 });
 
 $('#logoutButtonForm').on('submit', function() {
