@@ -9,7 +9,18 @@
     <button id="logoutToMain"></button>
   </form>
   <script>
-    localStorage.clear();
+
+if(localStorage.choreBearUser) {
+          const userObjParsed = JSON.parse(localStorage.choreBearUser);
+          console.log('before logout - userObjParsed: ', userObjParsed);
+          userObjParsed.permission = false;
+          console.log('after logout - userObjParsed: ', userObjParsed);
+
+          const userObjStringified = JSON.stringify(userObjParsed);
+          localStorage.setItem('choreBearUser', userObjStringified);
+        }
+
+        alert('stop here!')
     document.getElementById('logoutToMain').click();
   </script>
 </body>

@@ -4,11 +4,13 @@
 $(document).ready(function() {
   if(localStorage.choreBearUser) {
     const userObjParsed = JSON.parse(localStorage.choreBearUser);
-    $('#user').val(userObjParsed.name);
-    $('#password').val(userObjParsed.password);
-
+    if(userObjParsed.permission) {
+      $('#user').val(userObjParsed.name);
+      $('#password').val(userObjParsed.password);
+    }
   }
-})
+
+});
 
 // This function runs on page load, checks to see if the user has 'permission'
 $(document).ready(function() {
@@ -24,7 +26,7 @@ $(document).ready(function() {
 });
 
 // Form Handlers
-$('#createAccountForm, #choreBearLogin').on('submit', function() {
+$('#choreBearLogin').on('submit', function() {
   if(localStorage.choreBearUser) {
     console.log('user already in the local storage, moving on...');
   }
@@ -33,13 +35,33 @@ $('#createAccountForm, #choreBearLogin').on('submit', function() {
     user.name = event.target.user.value;
     user.password = event.target.password.value;
     user.remember = event.target.remember.checked;
-  
+
     if(user.remember) {
       user.permission = true;
       const userObjStringified = JSON.stringify(user);
       localStorage.setItem('choreBearUser', userObjStringified);
     }
   }
+});
+
+$('#createAccountForm').on('submit', function() {
+  // if(localStorage.choreBearUser) {
+  //   console.log('user already in the local storage');
+  // }
+  // else {
+  const user = {};
+  user.name = event.target.user.value;
+  user.password = event.target.password.value;
+  user.remember = event.target.remember.checked;
+  console.log('user props: ', user.name, user.password, user.remember);
+
+  if(user.remember) {
+    user.permission = true;
+    const userObjStringified = JSON.stringify(user);
+    localStorage.setItem('choreBearUser', userObjStringified);
+  }
+  // }
+  alert('stop clientside.js');
 });
 
 $('#logoutButtonForm').on('submit', function() {
@@ -49,8 +71,18 @@ $('#logoutButtonForm').on('submit', function() {
     $('#showLogout').fadeIn();
     var userObjParsed = JSON.parse(localStorage.choreBearUser);
     $('#showLogout').append(`${userObjParsed.name} logged out`);
-    localStorage.clear();
-    console.log('local storage cleared!');
+
+    //logout the user
+    console.log('before - userOuserObjParsed:',userObjParsed);
+    userObjParsed.permission = false;
+    console.log('after - userOuserObjParsed:',userObjParsed);
+
+    //set the updated permissions in userObjParsed back into Local Storage
+    const userObjStringified = JSON.stringify(userObjParsed);
+    localStorage.setItem('choreBearUser', userObjStringified);
+
+    console.log('user logged out!');
+
     $('#user').val('');
     $('#password').val('');
     $('#showLogout').fadeOut(2500);
