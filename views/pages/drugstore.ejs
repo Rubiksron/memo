@@ -12,31 +12,41 @@
 </head>
 <body>
   <h1 id="drugstoreTitle">Drugstore🐻</h1>
-
   <%- include('../partials/dropdown') %>  
 
   <form action="/createMemo" method="post" name=create required>
     <fieldset>
-      <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required><br>
-      <form>
-      </form>
+      <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required>
+      <input  style="display: none;" type="input" name="idInput" id="idInput" required>
       <button id="add" type="submit">+ Add +</button>
       <div id="radioButtonsDiv">
         <input style="display: none;" type="radio" name="choreType" value="drugstore" class="radio" checked='true' required>
         <br>
       </div>      
     </fieldset>
-  </form>
 
-  <ul id="ulMemos">
-    <% memos.forEach((memo) => { %>
-      <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
-       <% if(memo.chore_type === 'drugstore') { %>
-          <li><%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
-       <% } %>
-      </form>
-   <% }) %>
-  </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        if(localStorage.choreBearUser) {
+          const userObjParsed = JSON.parse(localStorage.choreBearUser);
+          console.log('userObjParsed: ', userObjParsed)
+          var id = userObjParsed.id
+        }
+        $('#idInput').val(id);
+    </script>
+    </form>
+  
+    <ul id="ulMemos">
+      <% memos.forEach((memo) => { %>
+        <form action="/delete/<%= memo.id %>?_method=DELETE" method="post" name="memo">
+        <% if(memo.chore_type === 'drugstore') { %>
+            <li><%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
+        <% } %>
+        </form>
+    <% }) %>
+    </ul>
   <%- include('../partials/footer') %>  
+
+
 </body>
 </html>
