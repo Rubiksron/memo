@@ -7,9 +7,11 @@ CREATE TABLE IF NOT EXISTS memos (
   chore_type VARCHAR(255)
 );
 
-INSERT INTO memos (id, memo, chore_type) VALUES ('1', 'apples', 'groceries');
+INSERT INTO memos (id, memo, chore_type) VALUES ('2', 'apples', 'groceries');
 INSERT INTO memos (id, memo, chore_type) VALUES ('2', 'oranges', 'groceries');
 INSERT INTO memos (id, memo, chore_type) VALUES ('3', 'shovel', 'hardware');
 INSERT INTO memos (id, memo, chore_type) VALUES ('4', 'tape measure', 'hardware');
 INSERT INTO memos (id, memo, chore_type) VALUES ('5', 'mary jane', 'drugstore');
 INSERT INTO memos (id, memo, chore_type) VALUES ('6', 'pills', 'drugstore');
+
+-- SELECT memos.memo FROM memos INNER JOIN users ON users.id=memos.id WHERE users.id=2;
