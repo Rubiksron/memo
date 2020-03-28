@@ -27,6 +27,7 @@ app.use(methodOverride('_method'));
 
 // Helper Functions
 const getMemos = require('./lib/getMemos');
+const beforeGetMemos = require('./lib/beforeGetMemos');
 const createMemo = require('./lib/createMemo');
 const getGroceries = require('./lib/getGroceries');
 const getHardware = require('./lib/getHardware');
@@ -43,10 +44,11 @@ const logout = require('./lib/logout');
 //the other routes are called as expected.
 app.get('/', login);
 app.get('/logout', logout);
+app.post('/beforeGetMemos', beforeGetMemos);
 app.get('/createAccount', createAccount);
 app.post('/createUser', createUser);
 app.post('/checkPassword', checkPassword);
-app.get('/getMemos', getMemos);
+app.post('/getMemos', getMemos);
 app.get('/groceries', getGroceries);
 app.get('/drugstore', getDrugstore);
 app.get('/hardware', getHardware);
