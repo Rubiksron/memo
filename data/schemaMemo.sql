@@ -13,5 +13,5 @@ INSERT INTO memos (id, memo, chore_type) VALUES ('3', 'shovel', 'hardware');
 INSERT INTO memos (id, memo, chore_type) VALUES ('4', 'tape measure', 'hardware');
 INSERT INTO memos (id, memo, chore_type) VALUES ('5', 'mary jane', 'drugstore');
 INSERT INTO memos (id, memo, chore_type) VALUES ('6', 'pills', 'drugstore');
-
+-- small change to trigger push 
 -- SELECT memos.memo FROM memos INNER JOIN users ON users.id=memos.id WHERE users.id=2;
