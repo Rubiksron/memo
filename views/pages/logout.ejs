@@ -15,6 +15,7 @@ if(localStorage.choreBearUser) {
           console.log('before logout - userObjParsed: ', userObjParsed);
           userObjParsed.permission = false;
           console.log('after logout - userObjParsed: ', userObjParsed);
+          localStorage.clear();
 
           const userObjStringified = JSON.stringify(userObjParsed);
           localStorage.setItem('choreBearUser', userObjStringified);
