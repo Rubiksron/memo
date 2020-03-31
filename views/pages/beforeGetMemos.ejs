@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" style="display: none;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/getMemos" method="get">
+    <button id="beforeGetMemosButton"></button>
+    <input  type="input" name="idInput" id="idInput">
+  </form>  
+  <h1><%= userId %></h1>
+  <script>
+    var id = <%= userId %>;
+      if(localStorage.choreBearUser) {
+        var userObjParsed = JSON.parse(localStorage.choreBearUser);
+        userObjParsed.id = id;
+
+        var userObjStringified = JSON.stringify(userObjParsed);
+        localStorage.setItem('choreBearUser', userObjStringified);
+        console.log('userObjStringified: ', userObjStringified)
+        document.getElementById('beforeGetMemosButton').click();
+      }
+      var userObjParsed = JSON.parse(localStorage.choreBearUser);
+      $('#idInput').val(userObjParsed.id);
+
+      // userObjParsedAgain = JSON.parse(localStorage.choreBearUser);
+      // console.log('line 25 - after setting in userId.ejs - userObjParsedAgain: ', userObjParsedAgain);
+  </script>
+</body>
+</html>
