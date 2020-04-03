@@ -6,11 +6,12 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="/getMemos" method="get">
+  <form action="/getMemos/<%= userId %>" method="get">
     <button id="beforeGetMemosButton"></button>
     <input  type="input" name="idInput" id="idInput">
   </form>  
   <h1><%= userId %></h1>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
     var id = <%= userId %>;
