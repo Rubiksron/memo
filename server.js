@@ -18,12 +18,15 @@ app.use(express.static('public'));
 
 //Set view enginge for server-side templating
 app.set('view engine', 'ejs');
+
 //Application Middleware
 app.use(express.urlencoded({ extended:true }));
 app.use(methodOverride('_method'));
 
 // Helper Functions
 const getMemos = require('./lib/getMemos');
+const beforeGetMemos = require('./lib/beforeGetMemos');
+const dropDownPage = require('./lib/dropDownPage');
 const createMemo = require('./lib/createMemo');
 const getGroceries = require('./lib/getGroceries');
 const getHardware = require('./lib/getHardware');
@@ -37,8 +40,7 @@ const logout = require('./lib/logout');
 
 //Routes
 
-//the '/' route call back 'login' is not invoked with the '/' route, but index.html. in the public file, this way i can grab the login info and store it in local storage
-//the other routes are called as expected.
+//the '/' route call back 'login' is not invoked with the '/' route, but index.html. in the public file, this way i can grab the login info and store it in local storage the other routes are called as expected.
 app.get('/', login);
 app.get('/logout', logout);
 app.get('/createAccount', createAccount);
@@ -53,19 +55,6 @@ app.get('/hardware/:idInput', getHardware);
 app.post('/createMemo', createMemo);
 app.delete('/delete/:memo_id', deleteMemo);
 app.get('*', (request, response) => response.status(404).send('This Route Does Not Exist'));
-
-function beforeGetMemos(request, response) {
-  console.log('request.params: ', request.params);
-  var idInput = request.params.idInput;
-  response.render('./pages/beforeGetMemos', { userId: idInput });
-}
-
-function dropDownPage(request, response) {
-  console.log('dropDownPage line:64 - request.body.idInput: ', request.body.idInput);
-  var idInput = request.body.idInput;
-  console.log('line:66 - idInput: ', idInput);
-  response.render('./pages/dropDownPage', { userId: idInput });
-}
 
 client.connect()
   .then(() => {
