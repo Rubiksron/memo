@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  background-image: url("../images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+button {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: white;
+  color: black;
+  margin: auto;
+  height: 10vh;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-image: url("../images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  text-align: center;
+  color: lightskyblue;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+}
+h3 {
+  text-align: center;
+  width: 80%;
+  margin: .25rem auto;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/pages/dropDownPage.css">
+  <title>Document</title>
+</head>
+  <body>
+    <form action="/groceries/<%= userId %>" method="get">
+      <button id="groceriesButton" name="groceriesButton">Groceries</button>
+    </form> 
+    
+    <form action="/hardware/<%= userId %>" method="get">
+      <button id="hardwareButton" name="hardwareButton">Hardware</button>
+    </form> 
+
+    <form action="/drugstore/<%= userId %>" method="get">
+      <button id="drugstoreButton" name="drugstoreButton">Drugstore</button>
+    </form> 
+
+    <form action="/getMemos/<%= userId %>" method="get">
+      <button id="homeButton">Home</button>
+    </form> 
+
+    <form action="/logout" method="get">
+      <button id="logoutButton" name="logoutButton">Logout</button>
+    </form> 
+
+    <script>
+      if(localStorage.choreBearUser) {
+        var userObjParsed = JSON.parse(localStorage.choreBearUser);
+        var id = userObjParsed.id;
+        console.log('dropDownPage.ejs - id: ', id);
+      }
+      </script>
+
+    <%- include('../partials/footer') %>
+</body>
+</html>

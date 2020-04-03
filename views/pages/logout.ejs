@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" style="display: none;">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body >
-  <form action="/" method="GET">
-    <button id="logoutToMain"></button>
-  </form>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body >
+    <form action="/" method="GET">
+      <button id="logoutToMain"></button>
+    </form>
+    <script>
 
-if(localStorage.choreBearUser) {
-          const userObjParsed = JSON.parse(localStorage.choreBearUser);
-          console.log('before logout - userObjParsed: ', userObjParsed);
-          userObjParsed.permission = false;
-          console.log('after logout - userObjParsed: ', userObjParsed);
-          localStorage.clear();
+  if(localStorage.choreBearUser) {
+            const userObjParsed = JSON.parse(localStorage.choreBearUser);
+            console.log('before logout - userObjParsed: ', userObjParsed);
+            userObjParsed.permission = false;
+            console.log('after logout - userObjParsed: ', userObjParsed);
+            localStorage.clear();
 
-          const userObjStringified = JSON.stringify(userObjParsed);
-          localStorage.setItem('choreBearUser', userObjStringified);
-        }
+            const userObjStringified = JSON.stringify(userObjParsed);
+            localStorage.setItem('choreBearUser', userObjStringified);
+          }
 
-    document.getElementById('logoutToMain').click();
-  </script>
-</body>
+      document.getElementById('logoutToMain').click();
+    </script>
+  </body>
 </html>

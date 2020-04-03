@@ -1,12 +1,16 @@
-        <div class="dropdown">
-            <button class="dropdownButton">Chore Stores</button>
-            <div class="dropdown-content">
-              <a href="/groceries">Groceries</a>
-              <a href="/drugstore">Drugstore</a>
-              <a href="/hardware">Hardware</a>
-              <a href="/getMemos">Home</a>
-              <a href="/logout">Logout</a>
-            </div>
+        <form action="/dropDownPage" method="POST">
+          <div class="dropdown">
+              <button class="dropdownButton">Chore Stores</button>
+              <input type="text" name="idInput" id="idInput" style="display: none;">
           </div>            
+        </form>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            if(localStorage.choreBearUser) {
+              var userObjParsed = JSON.parse(localStorage.choreBearUser);
+              var id = userObjParsed.id;
+            }
+            $('#idInput').val(id)
+        </script>
         
