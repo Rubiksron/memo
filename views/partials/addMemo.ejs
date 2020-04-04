@@ -20,10 +20,9 @@
   <script>
     if(localStorage.choreBearUser) {
      const userObjParsed = JSON.parse(localStorage.choreBearUser);
-     console.log('addMemo.ejs - userObjParsed: ', userObjParsed);
      var id = userObjParsed.id;
    }
-   const userObjParsed = JSON.parse(localStorage.choreBearUser);
+   userObjParsed = JSON.parse(localStorage.choreBearUser);
    $('#idInput').val(userObjParsed.id);
   </script>
 </form>
