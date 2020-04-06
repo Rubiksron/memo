@@ -13,39 +13,38 @@
 <body>
   <h1 id="hardwareTitle">Hardware🐻</h1>
   <%- include('../partials/dropdown') %>
-  <section>
-    <form action="/createMemo" method="post" name=create required>
-      <fieldset>
-        <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required><br>
-        <input  style="display: none;" type="input" name="idInput" id="idInput">   
-        <button id="add" type="submit">+ Add +</button>
-          <div id="radioButtonsDiv">
-            <input style="display: none;" type="radio" name="choreType" value="hardware" class="radio" checked='true' required>
-            <br>
-          </div>
-      </fieldset>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script>
-          if(localStorage.choreBearUser) {
-            const userObjParsed = JSON.parse(localStorage.choreBearUser);
-            console.log('userObjParsed: ', userObjParsed)
-            var id = userObjParsed.id
-          }
-          $('#idInput').val(id);
-      </script>
-      </form>
+  <form action="/createMemo" method="post" name=create required>
+    <fieldset>
+      <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required><br>
+      <input  style="display: none;" type="input" name="idInput" id="idInput">   
+      <button id="add" type="submit">+ Add +</button>
+        <div id="radioButtonsDiv">
+          <input style="display: none;" type="radio" name="choreType" value="hardware" class="radio" checked='true' required>
+          <br>
+        </div>
+    </fieldset>
 
-      <ul id="ulMemos">
-        <% memos.forEach((memo) => { %>
-          <form class="hardware" action="/delete/<%= memo.memo_id %>?_method=DELETE" method="post" name="memo">
-          <% if(memo.chore_type === 'hardware') { %>
-              <li><%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
-          <% } %>
-          </form>
-      <% }) %>
-      </ul>
-    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        if(localStorage.choreBearUser) {
+          const userObjParsed = JSON.parse(localStorage.choreBearUser);
+          console.log('userObjParsed: ', userObjParsed)
+          var id = userObjParsed.id
+        }
+        $('#idInput').val(id);
+    </script>
+    </form>
+
+    <ul id="ulMemos">
+      <% memos.forEach((memo) => { %>
+        <form action="/delete/<%= memo.memo_id %>?_method=DELETE" method="post" name="memo">
+        <% if(memo.chore_type === 'hardware') { %>
+            <li><%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
+        <% } %>
+        </form>
+    <% }) %>
+    </ul>
     <%- include('../partials/footer') %>  
   </body>
 </html>

@@ -2,27 +2,52 @@ html {
   height: 100vh;
 }
 body {
-  background-color: black;
+  padding-top: 2rem;
+  background-color: olive;
+  /* background-image: url("../images/groceries.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+li {
+  background-color: white;
+  list-style-type: none;
+  margin-right: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: .25rem;
+  padding: .5rem;
+  overflow: scroll;
+  color: darkblue;
+}
+form {
+  margin-top: 3rem; 
+}
+fieldset {
+  border:none;
+  width: 90%;
+  margin: auto;
+  border-radius: .25em;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: fixed;
+  background-color: olive;
 }
 #radioButtonsDiv {
   font-size: 0;
 }
 #groceriesTitle {
-  box-shadow: .2rem .2rem .5rem black;
+  background-color: olive;
   font-family: 'Pacifico', cursive;  
   font-size: 2rem;
   color: white;
-  width: 100%;
-  background-color: #38E8A0;
+  width: 50%;
+  text-align: center;
   margin: auto;
-  height: 11vh;
+  border-radius: .25rem;
   position: fixed;
-  left: 0;
-  top: 0;
-  padding: .5rem;
-}
-fieldset {
-  background-color: #38E8A0;
+  top: .25rem;
+  left: .6rem;
 }
 @media only screen and (min-width: 800px) {
   fieldset {

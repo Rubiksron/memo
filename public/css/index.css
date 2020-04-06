@@ -1,11 +1,16 @@
+/* love */
 html {
   font-family: 'Sen', sans-serif;
 }
 body {
-  background-color: black;
+  background-color: lightblue;
+  background-image: url("./images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-size: 1rem;
   overflow: scroll;
-  /* margin-top: 5rem; */
+  margin-top: 5rem;
 }
 h3 {
   color: white;
@@ -28,9 +33,22 @@ h1 {
 a {
   font-size: 2rem;
 }
+fieldset {
+  background-color: lightblue;
+  background-image: url("./images/bears-main-right.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: .25rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1.25rem;
+}                           
 li {
   background-color: white;
   list-style-type: none;
+  text-align: center;
   font-size: 1.5rem;
   border-radius: .25rem;
   padding: .5rem;
@@ -48,24 +66,5 @@ input {
   font-family: italic;
   border: ridge lightgreen;
 }
-#mainFieldset {
-  border:none;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 1rem;
-  position: relative;
-  width: 100%;
-  /* top: 6rem;
-  left: 0.2rem;
-  right: 0.2rem; */
-  /* box-shadow: .2rem .2rem .5rem black; */
-
-  background-color: lightblue;
-  background-image: url("./images/bears-main-right.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: .25rem;
-}                           
 
 
