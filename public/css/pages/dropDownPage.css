@@ -1,12 +1,7 @@
 body {
   background-color: black;
-  background-image: url("../images/stars.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
 }
-
 button {
   width: 100%;
   font-size: 1.5rem;
@@ -15,8 +10,8 @@ button {
   margin: auto;
   height: 10vh;
   margin-bottom: 1rem;
+  border-radius: .25rem;
 }
-
 footer {
   background-image: url("../images/stars.jpg");
   background-repeat: no-repeat;
@@ -36,4 +31,24 @@ h3 {
   text-align: center;
   width: 80%;
   margin: .25rem auto;
+}
+#groceriesButton {
+  border: solid .5rem #38E8A0;
+  border-radius: .25rem;
+}
+#drugstoreButton {
+  border: solid .5rem #3D20CB;
+  border-radius: .25rem;
+}
+#hardwareButton {
+  border: solid .5rem #4AE7FF;
+  border-radius: .25rem;
+}
+#logoutButton {
+  border: solid .5rem red;
+  border-radius: .25rem;
+}
+#homeButton {
+  border: solid .5rem silver;
+  border-radius: .25rem; 
 }
