@@ -1,43 +1,26 @@
 html {
   font-family: 'Sen', sans-serif;
 }
-form {
-  margin-bottom: 2rem;
-  padding: .5rem;
-  border-radius: .25rem;
-  margin-right: 2rem;
-}
-li {
-  font-family: 'Sen', sans-serif;
-  background-color: white;
-  list-style-type: none;
-  font-size: 1.5rem;
-  border-radius: .25rem;
-  padding: 1rem;
-  overflow: scroll;
-  color: darkblue;
-}
-fieldset {
-  border:none;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 1rem;
-  position: relative;
-  width: 100%;
-  top: 4rem;
-  box-shadow: .2rem .2rem .5rem black;
-  z-index: -1;
-  border-radius: .25rem;
-}
 #ulMemos {
-  background-color: black;
+
+  background-image: url("./images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   font-family: 'Sen', sans-serif;
+  width: 85%;
   margin: auto;
+  overflow: scroll;
+  height: 50vh;
+  margin-top: 11rem;
   margin-bottom: 1rem;
-  margin-top: 4rem;
 }
 #ulMemosMain {
   overflow: none;
+}
+li {
+  font-family: 'Sen', sans-serif;
 }
 #radioButtonsDiv {
   font-size: 1.5rem;
@@ -78,7 +61,6 @@ fieldset {
   font-size: 2rem;
   color: white;
   text-align: center;
-  margin-top: 6rem;
 }
 #memo {
   font-family: 'Sen', sans-serif;
@@ -101,14 +83,17 @@ fieldset {
   box-shadow: 0 .25rem #666;
   transform: translateY(.25rem);
 }
-.groceries {
-  background-color: #38E8A0;
+#groceries {
+  background-color: olive;
 }
-.hardware {
-  background-color: #4AE7FF;
+#hardware {
+  background-color: orange;
 }
-.drugstore {
-  background-color: #3D20CB;
+#drugstore {
+  background-color: darkred;
+}
+.moveRight {
+  margin-right: 2rem;
 }
 .radio {
   border-radius: 50%;
@@ -134,6 +119,34 @@ fieldset {
   right: .75rem;
   z-index: 6;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: .25rem;
+  background-color: #f9f9f9;
+  min-width: 10rem;
+  box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: .25rem;
+}
+.dropdown-content a {
+  color: black;
+  padding: .75rem;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
 @media only screen and (min-width: 800px) {
   body {
     width: 40%;

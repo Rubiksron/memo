@@ -38,7 +38,7 @@
   
     <ul id="ulMemos">
       <% memos.forEach((memo) => { %>
-        <form class="drugstore" action="/delete/<%= memo.memo_id %>?_method=DELETE" method="post" name="memo">
+        <form action="/delete/<%= memo.memo_id %>?_method=DELETE" method="post" name="memo">
         <% if(memo.chore_type === 'drugstore') { %>
             <li><%= memo.memo%><button type="submit" id="deleteButton">X</button></li>
         <% } %>
