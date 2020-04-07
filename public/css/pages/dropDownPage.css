@@ -48,3 +48,8 @@ h3 {
 #logoutButton {
   border: solid .5rem red;
 }
+#deleteButton {
+  background-color: red;
+  margin-top: 5rem;
+  width: 40%;
+}

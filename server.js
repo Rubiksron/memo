@@ -26,6 +26,7 @@ app.use(methodOverride('_method'));
 // Helper Functions
 const getMemos = require('./lib/getMemos');
 const beforeGetMemos = require('./lib/beforeGetMemos');
+const deleteAccount = require('./lib/deleteAccount');
 const dropDownPage = require('./lib/dropDownPage');
 const createMemo = require('./lib/createMemo');
 const getGroceries = require('./lib/getGroceries');
@@ -43,6 +44,7 @@ const logout = require('./lib/logout');
 //the '/' route call back 'login' is not invoked with the '/' route, but index.html. in the public file, this way i can grab the login info and store it in local storage the other routes are called as expected.
 app.get('/', login);
 app.get('/logout', logout);
+app.get('/deleteAccount/:id', deleteAccount);
 app.get('/createAccount', createAccount);
 app.post('/createUser', createUser);
 app.post('/dropDownPage', dropDownPage);

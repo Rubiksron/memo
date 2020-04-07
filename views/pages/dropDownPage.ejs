@@ -27,6 +27,10 @@
       <button id="logoutButton" name="logoutButton">Logout</button>
     </form> 
 
+    <form action="/deleteAccount/<%= userId %>" method="get">
+      <button id="deleteButton" name="deleteButton">Delete Account</button>
+    </form> 
+
     <script>
       if(localStorage.choreBearUser) {
         var userObjParsed = JSON.parse(localStorage.choreBearUser);
