@@ -4,11 +4,8 @@ html {
 #ulMemos {
   background-color: black;
   font-family: 'Sen', sans-serif;
-  width: 85%;
   margin: auto;
-  /* overflow: scroll;
-  height: 50vh; */
-  margin-top: 11rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 #ulMemosMain {

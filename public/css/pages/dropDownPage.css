@@ -42,3 +42,9 @@ h3 {
 #groceriesButton {
   border: solid .5rem #4AE7FF;
 }
+#homeButton {
+  border: solid .5rem silver;
+}
+#logoutButton {
+  border: solid .5rem red;
+}
