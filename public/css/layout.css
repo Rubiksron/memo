@@ -2,17 +2,12 @@ html {
   font-family: 'Sen', sans-serif;
 }
 #ulMemos {
-
-  background-image: url("./images/stars.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
+  background-color: black;
   font-family: 'Sen', sans-serif;
   width: 85%;
   margin: auto;
-  overflow: scroll;
-  height: 50vh;
+  /* overflow: scroll;
+  height: 50vh; */
   margin-top: 11rem;
   margin-bottom: 1rem;
 }
@@ -84,13 +79,13 @@ li {
   transform: translateY(.25rem);
 }
 #groceries {
-  background-color: olive;
+  background-color: #4AE7FF;
 }
 #hardware {
-  background-color: orange;
+  background-color: #3876E8;
 }
 #drugstore {
-  background-color: darkred;
+  background-color: #3D20CB;
 }
 .moveRight {
   margin-right: 2rem;
