@@ -3,11 +3,7 @@ html {
   font-family: 'Sen', sans-serif;
 }
 body {
-  background-color: lightblue;
-  background-image: url("./images/stars.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   font-size: 1rem;
   overflow: scroll;
   margin-top: 5rem;

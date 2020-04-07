@@ -4,11 +4,7 @@ html {
 }
 body {
   padding-top: 2rem;
-  background-color: darkorange;
-  /* background-image: url("../images/hardware-vintage.jpg"); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
+  background-color: black;
 }
 li {
   background-color: white;
@@ -32,13 +28,13 @@ fieldset {
   text-align: center;
   margin-bottom: 1rem;
   position: fixed;
-  background-color: darkorange;
+  background-color: #3876E8;
 }
 #radioButtonsDiv {
   font-size: 0;
 }
 #hardwareTitle {
-  background-color: darkorange;
+  background-color: #3876E8;
   font-family: 'Pacifico', cursive;  
   font-size: 2rem;
   color: white;

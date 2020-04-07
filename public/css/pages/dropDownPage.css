@@ -1,9 +1,5 @@
 body {
   background-color: black;
-  background-image: url("../images/stars.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
 }
 
@@ -36,4 +32,13 @@ h3 {
   text-align: center;
   width: 80%;
   margin: .25rem auto;
+}
+#drugstoreButton {
+  border: solid .5rem #3D20CB;
+}
+#hardwareButton {
+  border: solid .5rem #3876E8;
+}
+#groceriesButton {
+  border: solid .5rem #4AE7FF;
 }

@@ -3,11 +3,7 @@ html {
 }
 body {
   padding-top: 2rem;
-  background-color: darkred;
-  /* background-image: url("../images/drugstore.jpg"); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
+  background-color: black;
 }
 li {
   background-color: white;
@@ -31,13 +27,13 @@ fieldset {
   text-align: center;
   margin-bottom: 1rem;
   position: fixed;
-  background-color: darkred;
+  background-color: #3D20CB;
 }
 #radioButtonsDiv {
   font-size: 0;
 }
 #drugstoreTitle {
-  background-color: darkred;
+  background-color: #3D20CB;
   font-family: 'Pacifico', cursive;  
   font-size: 2rem;
   color: white;
