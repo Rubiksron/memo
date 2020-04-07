@@ -9,10 +9,9 @@ li {
   background-color: white;
   list-style-type: none;
   margin-right: 2rem;
-  text-align: center;
   font-size: 1.5rem;
   border-radius: .25rem;
-  padding: .5rem;
+  padding: 1rem;
   overflow: scroll;
   color: darkblue;
   border: solid .5rem #4AE7FF;

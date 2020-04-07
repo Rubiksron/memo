@@ -11,14 +11,14 @@
       <button id="homeButton">Home</button>
     </form> 
     
+    <form action="/groceries/<%= userId %>" method="get">
+      <button id="groceriesButton" name="groceriesButton">Groceries</button>
+    </form> 
+
     <form action="/drugstore/<%= userId %>" method="get">
       <button id="drugstoreButton" name="drugstoreButton">Drugstore</button>
     </form> 
 
-    <form action="/groceries/<%= userId %>" method="get">
-      <button id="groceriesButton" name="groceriesButton">Groceries</button>
-    </form> 
-    
     <form action="/hardware/<%= userId %>" method="get">
       <button id="hardwareButton" name="hardwareButton">Hardware</button>
     </form> 
