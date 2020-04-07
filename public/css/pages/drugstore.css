@@ -9,13 +9,12 @@ li {
   background-color: white;
   list-style-type: none;
   margin-right: 2rem;
-  text-align: center;
   font-size: 1.5rem;
   border-radius: .25rem;
-  padding: .5rem;
+  padding: 1rem;
   overflow: scroll;
   color: darkblue;
-  border: solid .5rem #3D20CB;
+  border: solid .5rem #38E8A0;
 }
 form {
   margin-top: 3rem; 
@@ -27,7 +26,7 @@ fieldset {
   border-radius: .25em;
   text-align: center;
   margin-bottom: 1rem;
-  background-color: #3D20CB;
+  background-color: #38E8A0;
   margin-top: 4rem;
   box-shadow: .3rem .3rem .6rem black;
 }
@@ -35,13 +34,13 @@ fieldset {
   font-size: 0;
 }
 #drugstoreTitle {
-  background-color: #3D20CB;
+  background-color: #38E8A0;
   box-shadow: .3rem .3rem .6rem black;
   font-family: 'Pacifico', cursive;  
   font-size: 2rem;
   color: white;
   width: 100%;
-  background-color: #3D20CB;
+  background-color: #38E8A0;
   margin: auto;
   height: 11vh;
   position: fixed;
