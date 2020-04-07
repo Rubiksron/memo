@@ -8,10 +8,6 @@ footer {
   color: lightskyblue;
   padding-top: .25rem;
   padding-bottom: .25rem;
-  position: fixed;
-  bottom: 0rem;
-  left: 0rem;
-  right: 0rem;
 }
 h3 {
   text-align: center;
