@@ -16,6 +16,7 @@ li {
   padding: .5rem;
   overflow: scroll;
   color: darkblue;
+  border: solid .5rem #3876E8;
 }
 form {
   margin-top: 3rem; 
@@ -27,24 +28,27 @@ fieldset {
   border-radius: .25em;
   text-align: center;
   margin-bottom: 1rem;
-  position: fixed;
   background-color: #3876E8;
+  margin-top: 4rem;
+  box-shadow: .3rem .3rem .6rem black;
 }
 #radioButtonsDiv {
   font-size: 0;
 }
 #hardwareTitle {
   background-color: #3876E8;
+  box-shadow: .3rem .3rem .6rem black;
   font-family: 'Pacifico', cursive;  
   font-size: 2rem;
   color: white;
-  width: 50%;
-  text-align: center;
+  width: 100%;
+  background-color: #3876E8;
   margin: auto;
-  border-radius: .25rem;
+  height: 11vh;
   position: fixed;
-  top: .25rem;
-  left: .6rem;
+  left: 0;
+  top: 0;
+  padding: .5rem;
 }
 @media only screen and (min-width: 800px) {
   fieldset {
