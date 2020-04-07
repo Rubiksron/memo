@@ -27,17 +27,26 @@
       <button id="logoutButton" name="logoutButton">Logout</button>
     </form> 
 
-    <form action="/deleteAccount/<%= userId %>" method="get">
-      <button id="deleteButton" name="deleteButton">Delete Account</button>
+    <button id="showDeleteButton">Delete Account</button>
+
+    <form style="display: none;" id="hiddenDelete" action="/deleteAccount/<%= userId %>" method="get">
+      <button id="deleteButton" name="deleteButton">DELETING ACCOUNT, CANNOT BE UNDONE</button>
     </form> 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
       if(localStorage.choreBearUser) {
         var userObjParsed = JSON.parse(localStorage.choreBearUser);
         var id = userObjParsed.id;
         console.log('dropDownPage.ejs - id: ', id);
       }
-      </script>
+
+      $('#showDeleteButton').click(function() {
+        console.log('hello from the show and hide function!!')
+        $('#showDeleteButton').hide();
+        $('#hiddenDelete').show();
+      })
+    </script>
 
     <%- include('../partials/footer') %>
 </body>

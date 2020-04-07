@@ -46,10 +46,12 @@ h3 {
   border: solid .5rem silver;
 }
 #logoutButton {
-  border: solid .5rem red;
+  border: solid .5rem #3DFF45;
 }
 #deleteButton {
   background-color: red;
-  margin-top: 5rem;
-  width: 40%;
+  margin-top: 2rem;
+}
+#showDeleteButton {
+  border: solid .5rem red;
 }
