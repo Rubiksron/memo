@@ -1,6 +1,9 @@
 html {
   font-family: 'Sen', sans-serif;
 }
+body {
+  margin-bottom: 6rem;
+}
 #ulMemos {
   background-color: black;
   font-family: 'Sen', sans-serif;
