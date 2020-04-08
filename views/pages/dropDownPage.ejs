@@ -29,7 +29,7 @@
 
     <button id="showDeleteButton">Delete Account</button>
 
-    <form style="display: none;" id="hiddenDelete" action="/deleteAccount/<%= userId %>" method="get">
+    <form style="display: none;" id="hiddenDelete" action="/deleteAccount/<%= userId %>?_method=DELETE" method="post">
       <button id="deleteButton" name="deleteButton">PUSH TO DELETE ACCOUNT</button>
     </form> 
 

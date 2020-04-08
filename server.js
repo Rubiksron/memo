@@ -44,7 +44,7 @@ const logout = require('./lib/logout');
 //the '/' route call back 'login' is not invoked with the '/' route, but index.html. in the public file, this way i can grab the login info and store it in local storage the other routes are called as expected.
 app.get('/', login);
 app.get('/logout', logout);
-app.get('/deleteAccount/:id', deleteAccount);
+app.delete('/deleteAccount/:id', deleteAccount);
 app.get('/createAccount', createAccount);
 app.post('/createUser', createUser);
 app.post('/dropDownPage', dropDownPage);
