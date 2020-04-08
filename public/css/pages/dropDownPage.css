@@ -10,6 +10,7 @@ button {
   margin: auto;
   height: 10vh;
   margin-bottom: 1rem;
+  border-radius: .25rem;
 }
 footer {
   background-image: url("../images/stars.jpg");
@@ -48,12 +49,11 @@ h3 {
 }
 #deleteButton {
   background-color: red;
-  margin-top: 2rem;
+  margin-top: 3rem;
   color: white;
 }
 #showDeleteButton {
   border: solid .5rem red;
   margin-top: 2rem;
-  background-color: red;
-  color: white;
+  background-color: white;
 }
