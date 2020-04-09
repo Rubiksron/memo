@@ -1,4 +1,5 @@
-# memo 
+# memo
+
 # Chore Bear
 This is a todo app with 3 categories: Groceries, Hardware, and Drugstore. A user can create an account and create all chores in the main page, or the user can look at an individual view of each category.  
 The app uses Bcrypt to hash the users password so that even if the database is breached the info will be heavily encrypted using 10 levels of salt.
