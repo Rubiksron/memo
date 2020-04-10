@@ -8,7 +8,7 @@ button {
   background-color: white;
   color: black;
   margin: auto;
-  height: 10vh;
+  height: 9vh;
   margin-bottom: 1rem;
   border-radius: .25rem;
 }
@@ -22,10 +22,6 @@ footer {
   color: lightskyblue;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  position: fixed;
-  bottom: 0rem;
-  left: 0rem;
-  right: 0rem;
 }
 h3 {
   text-align: center;

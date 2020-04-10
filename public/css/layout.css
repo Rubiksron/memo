@@ -1,9 +1,13 @@
 html {
   font-family: 'Sen', sans-serif;
 }
+#aboutMeParagraph {
+  color: white;
+  padding: .25rem;
+}
 #aboutMeChorebear {
   max-width: 100%;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 #ulMemos {
   background-color: black;
