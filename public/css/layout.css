@@ -1,6 +1,10 @@
 html {
   font-family: 'Sen', sans-serif;
 }
+#aboutMeChorebear {
+  max-width: 100%;
+  margin-top: 3rem;
+}
 #ulMemos {
   background-color: black;
   font-family: 'Sen', sans-serif;
@@ -53,6 +57,20 @@ li {
   font-size: 2rem;
   color: white;
   text-align: center;
+}
+#aboutMeTitle {
+  box-shadow: .3rem .3rem .6rem black;
+  font-family: 'Pacifico', cursive;  
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+  background-color: goldenrod;
+  margin: auto;
+  height: 11vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: .5rem;
 }
 #memo {
   font-family: 'Sen', sans-serif;

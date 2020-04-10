@@ -49,11 +49,14 @@ h3 {
 }
 #deleteButton {
   background-color: red;
-  margin-top: 3rem;
+  margin-top: 1rem;
   color: white;
 }
 #showDeleteButton {
   border: solid .5rem red;
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: white;
+}
+#aboutMeButton {
+  border: solid .5rem goldenrod;
 }
