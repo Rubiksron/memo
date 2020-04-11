@@ -19,8 +19,8 @@ html {
 #ulMemosMain {
   overflow: none;
 }
-li {
-  font-family: 'Sen', sans-serif;
+img {
+  border-radius: .25rem;
 }
 #radioButtonsDiv {
   font-size: 1.5rem;
