@@ -4,7 +4,7 @@
    <% if( memo.chore_type === 'groceries' ) { %>
       <form class="moveRight" id="groceries"  action="/delete/<%= memo.memo_id %>?_method=DELETE" method="post" name="memo">
           <li>Groceries<hr> <button type="submit" id="deleteButton">X</button><br>
-            memo: <%= memo.memo%>
+            <%= memo.memo%>
           </li>
       </form>
    <% } %>
@@ -12,7 +12,7 @@
    <% if( memo.chore_type === 'drugstore' ) { %>
     <form class="moveRight"  id="drugstore" action="/delete/<%= memo.memo_id %>?_method=DELETE" method="post" name="memo">
         <li>Drugstore<hr> <button type="submit" id="deleteButton">X</button><br>
-          memo: <%= memo.memo%>
+          <%= memo.memo%>
         </li>
     </form>
     <% } %>
@@ -20,7 +20,7 @@
     <% if( memo.chore_type === 'hardware' ) { %>
       <form class="moveRight" id="hardware" action="/delete/<%= memo.memo_id %>?_method=DELETE" method="post" name="memo">
           <li>Hardware<hr> <button type="submit" id="deleteButton">X</button><br>
-            memo: <%= memo.memo%>
+            <%= memo.memo%>
           </li>
       </form>
    <% } %>
