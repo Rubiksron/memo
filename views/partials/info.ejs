@@ -1,0 +1,17 @@
+<section>
+  <span id="infoQuestionMark"> ? </span>
+  <div style="display: none;" id="hiddenInfoDiv">
+    Chore Bear lets you add and delete chores on this main page by selecting which category of chore, then adding the chore itself.  
+    <br>
+    You can scroll down and see your chores in this main view or you can click the 'chore stores' button (top-right) and see each chore type by itself, where you can also add and delete chores.  
+    <br>
+    When you're done with a chore click the 'x' to remove the item, and move down the line until all of your chores are done!
+  </div>
+  <script>
+    $('#infoQuestionMark').on('click', function() {
+      $('#hiddenInfoDiv').toggle('slow', function() {
+
+      });
+    });
+  </script>
+</section>
