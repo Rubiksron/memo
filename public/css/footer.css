@@ -5,7 +5,7 @@ footer {
   background-position: center;
   width: 100%;
   text-align: center;
-  color: lightskyblue;
+  color: white;
   padding-top: .25rem;
   padding-bottom: .25rem;
 }
@@ -13,4 +13,40 @@ h3 {
   text-align: center;
   width: 80%;
   margin: .25rem auto;
+}
+#footerIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: .25rem;
+  margin-top: 1rem;
+}
+img {
+  background-color: lightblue;
+  width: 100%;
+  box-shadow: .1rem .1rem .3rem black;
+}
+#imgGithub {
+  background-image: url("./images/gitLogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+#imgInsta {
+  background-image: url("./images/Instagram-Logo-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+#imgLinkeIn {
+  background-image: url("./images/linkedin-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
 }

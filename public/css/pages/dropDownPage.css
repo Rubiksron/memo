@@ -9,17 +9,17 @@ button {
   color: black;
   margin: auto;
   height: 9vh;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   border-radius: .25rem;
 }
 footer {
+  font-family: 'Pacifico', cursive;  
   background-image: url("../images/stars.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   text-align: center;
-  color: lightskyblue;
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
