@@ -13,3 +13,12 @@ Chore Bear uses Bcrypt to hash the users password and Postgres SQL to store the 
 **Attribution**:
 I use images from 'We Bare Bears' from the cartoon network. The main input and the sign-in page background are both their property, as well as the image in the main form where one would add chores.
 link to We Bare Bears info: https://en.wikipedia.org/wiki/We_Bare_Bears
+<hr>
+<img src="public/css/images/Express-icon.png" width="150" height="40" /><br>
+Express was used for all routing needs.
+<hr>
+<img src="public/css/images/EJS.png" width="100" height="40" /><br>
+EJS templating for rendering of views
+<hr>
+
+
