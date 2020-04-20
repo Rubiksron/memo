@@ -7,7 +7,7 @@
 
 * To share your list with anyone else, share your user name and password so that they can sign in on their device, then they will also have access to the same chores. 
 
-*You can add as needed and delete when completed!
+* You can add as needed and delete when completed!
 
 **Attribution**:
 I use images from 'We Bare Bears' from the cartoon network. The main input and the sign-in page background are both their property, as well as the image in the main form where one would add chores.
