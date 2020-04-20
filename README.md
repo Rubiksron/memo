@@ -1,6 +1,12 @@
 # Chore Bear
-This is a todo app with 3 categories:
-Groceries, Hardware, and Drugstore. A user can create an account and create all chores in the main page, or the user can look at an individual view of each category.  
+Chore Bear lets you add and delete chores on this main page by selecting which category of chore, then adding the chore itself.  
+
+You can scroll down and see your chores in this main view or you can click the 'chore stores' button (top-right) and see each chore type by itself, where you can also add and delete chores.  
+When you're done with a chore click the 'x' to remove the item, and move down the line until all of your chores are done!
+
+To share your list with anyone else, share your user name and password so that they can sign in on their device, then they will also have access to the same chores. 
+
+You can add as needed and delete when completed!
 
 Chore Bear uses Bcrypt to hash the users password and Postgres SQL to store the users data.
 
