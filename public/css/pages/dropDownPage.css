@@ -12,6 +12,9 @@ button {
   margin-bottom: .5rem;
   border-radius: .25rem;
 }
+img {
+  border-radius: .25rem;
+}
 footer {
   font-family: 'Pacifico', cursive;  
   background-image: url("../images/stars.jpg");
@@ -40,22 +43,22 @@ h3 {
 #homeButton {
   border: solid .5rem silver;
 }
-#logoutButton {
-  border: solid .5rem #3DFF45;
+#aboutMeButton {
+  margin-top: 2rem;
+  border: solid .5rem goldenrod;
 }
-#deleteButton {
-  background-color: red;
-  margin-top: 1rem;
-  color: white;
+#logoutButton {
+  border: solid .5rem #FF8A00;
 }
 #showDeleteButton {
   border: solid .5rem red;
+}
+#deleteButton {
   margin-top: 1rem;
+  background-color: red;
+  color: white;
+}
   background-color: white;
-}
-#aboutMeButton {
-  border: solid .5rem goldenrod;
-}
 @media only screen and (min-width: 800px) {
   body {
     width: 60%;

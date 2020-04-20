@@ -50,3 +50,11 @@ img {
   width: 2.5rem;
   height: 2.5rem;
 }
+#imgEmail {
+  background-image: url("./images/email-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}

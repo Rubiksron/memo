@@ -24,14 +24,14 @@
       <button id="hardwareButton" name="hardwareButton">Hardware</button>
     </form> 
 
-    <form action="/logout" method="get">
-      <button id="logoutButton" name="logoutButton">Logout</button>
-    </form> 
-
     <form action="/aboutMe" method="get">
       <button id="aboutMeButton" name="aboutMeButton">About Me</button>
     </form> 
 
+    <form action="/logout" method="get">
+      <button id="logoutButton" name="logoutButton">Logout</button>
+    </form> 
+    
     <button id="showDeleteButton">Delete Account</button>
 
     <form style="display: none;" id="hiddenDelete" action="/deleteAccount/<%= userId %>?_method=DELETE" method="post">
