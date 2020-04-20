@@ -58,7 +58,6 @@ h3 {
   background-color: red;
   color: white;
 }
-  background-color: white;
 @media only screen and (min-width: 800px) {
   body {
     width: 60%;
