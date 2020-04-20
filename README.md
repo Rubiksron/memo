@@ -8,7 +8,7 @@ To share your list with anyone else, share your user name and password so that t
 
 You can add as needed and delete when completed!
 
-Chore Bear uses Bcrypt to hash the users password and Postgres SQL to store the users data.
+Chore Bear uses Bcrypt to hash the users password and Postgres SQL to store the users data. We use Express for routing and EJS templating for rendering of pages.
 
 Attribution:
 I use images from 'We Bare Bears' from the cartoon network. The main input and the sign-in page background are both their property, as well as the image in the main form where one would add chores.
