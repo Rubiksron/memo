@@ -16,3 +16,7 @@ link to We Bare Bears info: https://en.wikipedia.org/wiki/We_Bare_Bears
 <img src="public/css/images/Express-icon.png" width="150" height="40" /> | <img src="public/css/images/EJS.png" width="100" height="40" /> | <img src="public/css/images/PostgreSQL.png" width="150" height="60" /> | <img src="public/css/images/bcrypt.jpg" width="40" height="40" /> |
 ------------ | ------------- | ------------ | ------------- 
 Express for all routing needs. | EJS templating for rendering of views | PostgreSQL to store user information. | Bcrypt for hashing user passwords.
+
+## Chore Bear Flow Chart
+<hr>
+<img src="public/css/images/choreBearFlowChart.png" width="1000" height="600" />
