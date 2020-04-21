@@ -39,7 +39,6 @@ button {
   font-size: 1rem;
   margin-top: 2rem;
   font-family: 'Sen', sans-serif;
-  box-shadow: .1rem .1rem .3rem black;
 }
 
 button:hover {
@@ -67,7 +66,6 @@ span.psw {
 #createAccountDiv {
   padding-top: .5rem;
   padding-bottom: .5rem;
-  background-color: lightgreen;
   margin: auto;
   border-radius: .25rem;
 }
