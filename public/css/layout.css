@@ -27,18 +27,19 @@ footer {
 #radioButtonsDiv {
   font-size: 1.5rem;
   font-family: 'Sen', sans-serif;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
 }
 #add {
   font-family: 'Sen', sans-serif;
   border-radius: .25rem;
-  border-color: lightgreen;
   color: white;
-  box-shadow: .1rem .1rem .3rem black;
   background-color: green;
   margin-top: .5rem;
   height: 2.5rem;
   font-size: 1.25rem;
   width: 100%;
+  border-style: none;
 }
 #choreBear {
   background-image: url("./images/stars.jpg");
