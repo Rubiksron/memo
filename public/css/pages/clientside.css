@@ -32,7 +32,6 @@ label {
   width: 95%;
   margin:auto;
   margin-top: 2rem;
-  box-shadow: .1rem .1rem .3rem black;
 }
 #cancelButton {
   width: 100%;
@@ -64,7 +63,6 @@ label {
   margin: auto;
   text-align: center;
   border-radius: .25rem;
-  box-shadow: 4px 4px 10px grey;
   font-size: 1.5rem;
   line-height: 30vh;
   z-index: 5;
@@ -102,7 +100,6 @@ button {
   font-size: 1rem;
   margin-top: 2rem;
   font-family: 'Sen', sans-serif;
-  box-shadow: .1rem .1rem .3rem black;
 }
 input[type=text], input[type=password] {
   width: 100%;
