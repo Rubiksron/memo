@@ -19,3 +19,22 @@ Express for all routing needs. | EJS templating for rendering of views | Postgre
 
 ## Chore Bear Flow Chart
 <img src="public/css/images/choreBearFlowChart.png" width="1000" height="600" />
+
+## Routes
+```
+app.get('/', login);
+app.get('/logout', logout);
+app.get('/aboutMe', aboutMe);
+app.get('/createAccount', createAccount);
+app.get('/beforeGetMemos', beforeGetMemos);
+app.get('/getMemos/:idInput', getMemos);
+app.get('/groceries/:idInput', getGroceries);
+app.get('/drugstore/:idInput', getDrugstore);
+app.get('/hardware/:idInput', getHardware);
+app.post('/createUser', createUser);
+app.post('/dropDownPage', dropDownPage);
+app.post('/checkPassword', checkPassword);
+app.post('/createMemo', createMemo);
+app.delete('/deleteAccount/:id', deleteAccount);
+app.delete('/delete/:memo_id', deleteMemo);
+```
