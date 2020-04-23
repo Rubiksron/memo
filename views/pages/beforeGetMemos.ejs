@@ -21,7 +21,6 @@
 
         var userObjStringified = JSON.stringify(userObjParsed);
         localStorage.setItem('choreBearUser', userObjStringified);
-        console.log('userObjStringified: ', userObjStringified)
         document.getElementById('beforeGetMemosButton').click();
       }
       var userObjParsed = JSON.parse(localStorage.choreBearUser);

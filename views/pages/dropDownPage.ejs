@@ -43,15 +43,12 @@
       if(localStorage.choreBearUser) {
         var userObjParsed = JSON.parse(localStorage.choreBearUser);
         var id = userObjParsed.id;
-        // console.log('dropDownPage.ejs - id: ', id);
       }
-
       $('#showDeleteButton').click(function() {
         $('#showDeleteButton').hide();
         $('#hiddenDelete').show();
       })
     </script>
-
     <%- include('../partials/footer') %>
-</body>
+  </body>
 </html>

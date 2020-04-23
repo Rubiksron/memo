@@ -9,18 +9,13 @@
       <button id="logoutToMain"></button>
     </form>
     <script>
-
-  if(localStorage.choreBearUser) {
-            const userObjParsed = JSON.parse(localStorage.choreBearUser);
-            console.log('before logout - userObjParsed: ', userObjParsed);
-            userObjParsed.permission = false;
-            console.log('after logout - userObjParsed: ', userObjParsed);
-            localStorage.clear();
-
-            const userObjStringified = JSON.stringify(userObjParsed);
-            localStorage.setItem('choreBearUser', userObjStringified);
-          }
-
+      if(localStorage.choreBearUser) {
+        const userObjParsed = JSON.parse(localStorage.choreBearUser);
+        userObjParsed.permission = false;
+        localStorage.clear();
+        const userObjStringified = JSON.stringify(userObjParsed);
+        localStorage.setItem('choreBearUser', userObjStringified);
+      }
       document.getElementById('logoutToMain').click();
     </script>
   </body>

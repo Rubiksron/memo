@@ -1,5 +1,6 @@
 'use strict';
 
+//Environmental Variables
 require('dotenv').config();
 
 //Application Dependencies
@@ -13,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 //Database Setup
 const client = require('./lib/Client');
 
-//Static Routes
+//Static Route - app lands on index.html
 app.use(express.static('public'));
 
 //Set view enginge for server-side templating
@@ -23,7 +24,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended:true }));
 app.use(methodOverride('_method'));
 
-// Helper Functions
+//Helper Functions
 const getMemos = require('./lib/getMemos');
 const aboutMe = require('./lib/aboutMe');
 const beforeGetMemos = require('./lib/beforeGetMemos');
@@ -34,16 +35,12 @@ const getGroceries = require('./lib/getGroceries');
 const getHardware = require('./lib/getHardware');
 const getDrugstore = require('./lib/getDrugstore');
 const deleteMemo = require('./lib/deleteMemo');
-const login = require('./lib/login');
 const createUser = require('./lib/createUser');
 const checkPassword = require('./lib/checkPassword');
 const createAccount = require('./lib/createAccount');
 const logout = require('./lib/logout');
 
 //Routes
-
-//the '/' route call back 'login' is not invoked with the '/' route, but index.html. in the public file, this way i can grab the login info and store it in local storage the other routes are called as expected.
-app.get('/', login);
 app.get('/logout', logout);
 app.get('/aboutMe', aboutMe);
 app.get('/createAccount', createAccount);
