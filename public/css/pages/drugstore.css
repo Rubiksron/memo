@@ -52,3 +52,8 @@ fieldset {
     width: 36%;
   }
 }
+@media (orientation: landscape) {
+  #drugstoreTitle {
+    height: 15vh;
+  }
+}
