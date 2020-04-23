@@ -22,10 +22,10 @@ You can add as needed and delete when completed!
 ```
 
 **Attribution**:
-```
+
 I use images from 'We Bare Bears' from the cartoon network. The main input and the sign-in page background are both their property, as well as the image in the main form where one would add chores.
-link to We Bare Bears info: https://en.wikipedia.org/wiki/We_Bare_Bears
-```
+Here's a [link](https://en.wikipedia.org/wiki/We_Bare_Bears) to We Bare Bears info.
+
 
 <img src="public/css/images/Express-icon.png" width="150" height="40" /> | <img src="public/css/images/EJS.png" width="100" height="40" /> | <img src="public/css/images/PostgreSQL.png" width="150" height="60" /> | <img src="public/css/images/bcrypt.jpg" width="40" height="40" /> | <img src="public/css/images/jest.jpeg" width="50" height="50" />
 ------------ | ------------- | ------------ | ------------- | ------------
