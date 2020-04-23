@@ -68,3 +68,8 @@ h3 {
     margin-top: 8rem;
   }
 }
+@media (orientation: landscape) {
+  button {
+    height: 14vh;
+  }
+}

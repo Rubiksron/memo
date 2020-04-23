@@ -22,7 +22,6 @@ html {
   overflow: none;
 }
 footer {
-  font-family: 'Pacifico', cursive;  
   color: white;
 }
 #radioButtonsDiv {
@@ -187,7 +186,6 @@ footer {
   background-color: #3e8e41;
 }
 
-
 @media only screen and (min-width: 800px) {
   body {
     width: 60%;
@@ -195,5 +193,13 @@ footer {
   }
   fieldset {
     margin-top: 8rem;
+  }
+}
+@media (orientation: landscape) {
+  #choreBear {
+    height: 15vh;
+  }
+  #aboutMeTitle {
+    height: 15vh;
   }
 }

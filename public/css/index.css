@@ -38,7 +38,7 @@ fieldset {
   background-size: cover;
   background-position: center;
   border-radius: .25rem;
-  width: 90%;
+  width: 85%;
   margin: auto;
   margin-top: 1rem;
   color: darkblue;
@@ -65,6 +65,7 @@ input {
 }
 footer {
   font-family: 'Pacifico', cursive;  
+  font-size: 1rem;
 }
 
 

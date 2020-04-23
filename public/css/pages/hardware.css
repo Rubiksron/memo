@@ -53,3 +53,8 @@ fieldset {
     width: 36%;
   }
 }
+@media (orientation: landscape) {
+  #hardwareTitle {
+    height: 15vh;
+  }
+}
