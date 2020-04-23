@@ -23,6 +23,7 @@ html {
 }
 footer {
   color: white;
+  font-family: 'Pacifico', cursive;
 }
 #radioButtonsDiv {
   font-size: 1.5rem;
