@@ -9,13 +9,13 @@ the 'chore stores' button (top-right) and see each chore type by itself, where
 you can also add and delete chores. 
 ```
 ```
-When you're done with a chore click the 'x' to remove the item, and move down 
+When you're done with a chore click the 'x' to remove the item, then move down 
 the list until all of your chores are done!
 ```
 ```
 To share your list with anyone else, share your user name and password so that 
 they can sign in on their device, then they will also have access to the 
-same chores. 
+same chores list.
 ```
 ```
 You can add as needed and delete when completed!
