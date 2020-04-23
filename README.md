@@ -1,7 +1,7 @@
 # [Chore Bear](https://chorebear.herokuapp.com/)
 ```
-Chore Bear lets you add and delete chores on the main page by selecting which category 
-of chore, then adding the chore itself.  
+Chore Bear lets you add and delete chores on the main page by selecting which 
+category of chore, then adding the chore itself.  
 ```
 ```
 You can scroll down and see your chores in this main view or you can click 
@@ -9,13 +9,13 @@ the 'chore stores' button (top-right) and see each chore type by itself, where
 you can also add and delete chores. 
 ```
 ```
-When you're done with a chore click the 'x' to remove the item, 
-and move down the line until all of your chores are done!
+When you're done with a chore click the 'x' to remove the item, and move down 
+the line until all of your chores are done!
 ```
 ```
-To share your list with anyone else, share your user name and password
-so that they can sign in on their device, then they will also have 
-access to the same chores. 
+To share your list with anyone else, share your user name and password so that 
+they can sign in on their device, then they will also have access to the 
+same chores. 
 ```
 ```
 You can add as needed and delete when completed!
