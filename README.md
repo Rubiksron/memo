@@ -10,7 +10,7 @@ you can also add and delete chores.
 ```
 ```
 When you're done with a chore click the 'x' to remove the item, and move down 
-the line until all of your chores are done!
+the list until all of your chores are done!
 ```
 ```
 To share your list with anyone else, share your user name and password so that 
