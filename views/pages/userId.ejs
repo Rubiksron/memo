@@ -9,7 +9,6 @@
   <form action="/" style="display: none;">
     <button id="userIdEjs"></button>
   </form>  
-  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
     var id = <%= userId %>;
@@ -21,7 +20,6 @@
         document.getElementById('userIdEjs').click();
       }
       const userObjParsed = JSON.parse(localStorage.choreBearUser);
-      console.log('userId.ejs - userObjParsed: ', userObjParsed);
   </script>
 </body>
 </html>
