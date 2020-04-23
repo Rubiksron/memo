@@ -21,7 +21,7 @@ access to the same chores.
 You can add as needed and delete when completed!
 ```
 
-**Attribution**:
+## Attribution:
 
 I use images from 'We Bare Bears' from the cartoon network. The main input and the sign-in page background are both their property, as well as the image in the main form where one would add chores.
 Here's a [link](https://en.wikipedia.org/wiki/We_Bare_Bears) to We Bare Bears info.
@@ -32,6 +32,7 @@ Here's a [link](https://en.wikipedia.org/wiki/We_Bare_Bears) to We Bare Bears in
 Express for all routing needs. | EJS templating for rendering of views | PostgreSQL to store user information. | Bcrypt for hashing user passwords. | Jest for testing.
 
 ## Chore Bear Flow Chart
+
 <img src="public/css/images/choreBearFlowChart.png" width="700" height="500" />
 
 
