@@ -45,7 +45,6 @@ $('#createAccountForm').on('submit', function() {
   user.name = event.target.user.value;
   user.password = event.target.password.value;
   user.remember = event.target.remember.checked;
-  console.log('user props: ', user.name, user.password, user.remember);
 
   if(user.remember) {
     user.permission = true;
@@ -63,16 +62,12 @@ $('#logoutButtonForm').on('submit', function() {
     $('#showLogout').append(`${userObjParsed.name} logged out`);
 
     //logout the user
-    console.log('before - userOuserObjParsed:',userObjParsed);
     userObjParsed.permission = false;
     localStorage.clear();
-    console.log('after - userOuserObjParsed:',userObjParsed);
 
     //set the updated permissions in userObjParsed back into Local Storage
     const userObjStringified = JSON.stringify(userObjParsed);
     localStorage.setItem('choreBearUser', userObjStringified);
-
-    console.log('user logged out!');
 
     $('#user').val('');
     $('#password').val('');
