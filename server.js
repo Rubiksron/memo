@@ -6,6 +6,7 @@ require('dotenv').config();
 //Application Dependencies
 const express = require('express');
 const methodOverride = require('method-override');
+const cors = require('cors');
 
 //Application Setup
 const app = express();
@@ -21,6 +22,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 //Application Middleware
+app.use(cors());
 app.use(express.urlencoded({ extended:true }));
 app.use(methodOverride('_method'));
 
