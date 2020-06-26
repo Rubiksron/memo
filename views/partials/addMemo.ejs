@@ -1,6 +1,6 @@
 <form action="/createMemo" method="post" name=create required>
   <fieldset>
-    <input type="text" autofocus="autofocus" placeholder=" enter chore here..." name="memo" id="memo" required><br>
+    <input type="text" placeholder=" enter chore here..." name="memo" id="memo" required><br>
     <form>
       <div id="radioButtonsDiv">
         <input type="radio" name="choreType" value="groceries" class="radio" required>Groceries
@@ -13,16 +13,16 @@
         <br>
 
       </div>
-   </form>
+    </form>
     <button id="add" type="submit">+ Add +</button>
   </fieldset>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
-    if(localStorage.choreBearUser) {
-     const userObjParsed = JSON.parse(localStorage.choreBearUser);
-     var id = userObjParsed.id;
-   }
-   userObjParsed = JSON.parse(localStorage.choreBearUser);
-   $('#idInput').val(userObjParsed.id);
+    if (localStorage.choreBearUser) {
+      const userObjParsed = JSON.parse(localStorage.choreBearUser);
+      var id = userObjParsed.id;
+    }
+    userObjParsed = JSON.parse(localStorage.choreBearUser);
+    $('#idInput').val(userObjParsed.id);
   </script>
 </form>

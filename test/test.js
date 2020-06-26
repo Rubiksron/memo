@@ -22,18 +22,18 @@ var login = require('../lib/login');
 var logout = require('../lib/logout');
 var aboutMe = require('../lib/aboutMe');
 
-describe('GET /', function() {
-  it('responds with text/html', function(done) {
-    request
-      .get('/')
-      .expect('Content-Type', 'text/html; charset=utf-8')
-      .expect(200)
-      .end(function(err, res) {
-        if (err) return done(err);
-        done();
-      });
-  });
-});
+// describe('GET /', function() {
+//   it('responds with text/html', function(done) {
+//     request
+//       .get('/')
+//       .expect('Content-Type', 'text/html; charset=utf-8')
+//       .expect(200)
+//       .end(function(err, res) {
+//         if (err) return done(err);
+//         done();
+//       });
+//   });
+// });
 
 describe('should be a function', function() {
   it('aboutMe should return true when checked with typeof function', function() {
